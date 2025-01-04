@@ -1,0 +1,72 @@
+- School: Cornell
+  Degree: 
+  Program: Computational Approaches for Microbial Systems BIOMI 6300
+  id: 
+  data-id: 
+  heading-id: 
+  Date: 2023
+  first: true   # one must be true to properly display
+  description: >
+    <ul>
+    <li>Designed learning outcomes and developed a case study from my own research to teach upper-
+    level approaches to bioinformatic analysis and interpretation of next generation sequencing data.</li>
+    <li>Utilized active learning strategies (think-pair-share, popcorn, PollEverywhere survey) to engage
+      students, promote in-class discussion, and assess student take-aways.</li>
+    <li>Learning outcomes:
+      <ul>
+      <li> Learn how both genomic and metagenomic sequencing can be harnessed to explore hypotheses</li>
+      <li>Explore trade-offs from different types of sequencing (genomic vs. metagenomic) and different
+      levels of sequencing (shallow vs. deep)</li>
+      </ul></li>
+    </ul>
+
+- School: Cornell
+  Degree: 
+  Program: BioG 1500 - Investigative Biology 
+  id: 
+  data-id: 
+  heading-id: 
+  Date: Fall 2022, Spring & Fall 2023
+  first: true   # one must be true to properly display
+  description: >
+    
+
+- School: Cornell
+  Degree: 
+  Program: BioMI 2600 - Microbiology of Human Contagious Diseases 
+  id: 
+  data-id: 
+  heading-id: 
+  Date: Fall 2021
+  first: true   # one must be true to properly display
+  description: >
+
+- School: Cornell
+  Degree: 
+  Program: BioMI 1100 - College Dorm Microbiology 
+  id: 
+  data-id: 
+  heading-id: 
+  Date: Spring 2019, 2020 
+  first: true   # one must be true to properly display
+  description: >
+
+- School: Cornell
+  Degree: 
+  Program: Microbial Friends and Foes Summer REU 
+  id: 
+  data-id: 
+  heading-id: 
+  Date: Summer 2019 
+  first: true   # one must be true to properly display
+  description: >
+
+- School: Cornell
+  Degree: 
+  Program: BioMI 2500 - Public Health Microbiology 
+  id: 
+  data-id: 
+  heading-id: 
+  Date: Fall 2018 
+  first: true   # one must be true to properly display
+  description: >
