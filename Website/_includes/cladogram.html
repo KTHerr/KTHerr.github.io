@@ -1,0 +1,92 @@
+{% comment %}
+  Study-systems cladogram. Topology follows current consensus for the taxa
+  actually sampled in this work: Bacteria (Alpha- + Gammaproteobacteria) vs
+  Eukaryota; within eukaryotes, Fungi sister to Insecta; within Insecta,
+  Coleoptera sister to Hemiptera. Tips are ordered with the insects at the
+  top, reading down to the bacteria.
+
+  The branch SVG is pure horizontal/vertical rules, so it is stretched with
+  preserveAspectRatio="none" — a rectangular cladogram carries no branch-length
+  information, and right angles stay right angles under that transform. Tip
+  rows are HTML, so the labels stay real selectable text at true proportions.
+
+  Geometry: viewBox is 560 x 500 for five tips, so each tip row is 100 units
+  tall and tip centres fall at y = 50, 150, 250, 350, 450 — matching the
+  five equal-height rows of .clado-tips.
+{% endcomment %}
+
+<figure class="cladogram-figure">
+  <div class="cladogram-scroll">
+    <div class="cladogram">
+      <div class="clado-tree">
+        <svg viewBox="0 0 560 500" preserveAspectRatio="none" fill="none" aria-hidden="true">
+          <g stroke="currentColor" stroke-width="2.4" vector-effect="non-scaling-stroke" stroke-linecap="square">
+            <!-- root -->
+            <path d="M8 287.5 H60"/>
+            <path d="M60 175 V400"/>
+            <!-- stem to the sampled eukaryotes, and to the bacteria -->
+            <path d="M60 175 H300"/>
+            <path d="M60 400 H300"/>
+            <!-- eukaryotes: Insecta sister to Fungi -->
+            <path d="M300 100 V250"/>
+            <path d="M300 250 H560"/>
+            <path d="M300 100 H440"/>
+            <!-- Insecta: Coleoptera sister to Hemiptera -->
+            <path d="M440 50 V150"/>
+            <path d="M440 50 H560"/>
+            <path d="M440 150 H560"/>
+            <!-- Bacteria: Gamma- sister to Alphaproteobacteria -->
+            <path d="M300 350 V450"/>
+            <path d="M300 350 H560"/>
+            <path d="M300 450 H560"/>
+          </g>
+        </svg>
+        <span class="clade" style="left:78.6%;top:20.0%;">Insecta</span>
+        <span class="clade" style="left:32.1%;top:35.0%;">Eukaryota</span>
+        <span class="clade" style="left:32.1%;top:80.0%;">Bacteria</span>
+      </div>
+
+      <ul class="clado-tips">
+        <li>
+          <span class="clado-specimen">{{ org_beetle }}</span>
+          <span class="clado-label">
+            <em>Nicrophorus</em> spp.
+            <small>Coleoptera · burying beetles and their yeast symbionts</small>
+          </span>
+        </li>
+        <li>
+          <span class="clado-specimen">{{ org_aphid }}</span>
+          <span class="clado-label">
+            Pea aphids
+            <small>Hemiptera · insect host responding to leaf-surface microbes</small>
+          </span>
+        </li>
+        <li>
+          <span class="clado-specimen">{{ org_yeast }}</span>
+          <span class="clado-label">
+            <em>Yarrowia</em>-like yeasts
+            <small>Ascomycota · symbionts carried by burying beetles</small>
+          </span>
+        </li>
+        <li>
+          <span class="clado-specimen">{{ org_pseudomonas }}</span>
+          <span class="clado-label">
+            <em>Pseudomonas</em> spp.
+            <small>Gammaproteobacteria · fluorescent phyllosphere bacteria</small>
+          </span>
+        </li>
+        <li>
+          <span class="clado-specimen">{{ org_caulobacter }}</span>
+          <span class="clado-label">
+            <em>Caulobacter crescentus</em>
+            <small>Alphaproteobacteria · exopolysaccharide trade-offs and phage defence</small>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <figcaption>
+    The organisms I work with, and how they are actually related. Topology only:
+    branch lengths carry no information, and only taxa from my own research are sampled.
+  </figcaption>
+</figure>

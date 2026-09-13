@@ -1,0 +1,32 @@
+# Ordered newest first. `type` distinguishes conference talks, invited
+# departmental talks, and posters; all entries are taken from the CV.
+
+- title: "The Symphony of Symbiosis: Ecological and Evolutionary Impacts of Microbial Interactions with Insects"
+  venue: CIHMID Summer Symposium, Cornell University
+  type: Conference Talk
+  year: 2024
+
+- title: "The Symphony of Symbiosis: Ecological and Evolutionary Impacts of Microbial Interactions with Insects"
+  venue: Dissertation Seminar, Cornell University
+  type: Invited Talk
+  year: 2024
+
+- title: "An Investigation into <em>Yarrowia</em>-like Yeast Symbionts of Burying Beetles (<em>Nicrophorus</em> spp.)"
+  venue: Microbiology Department Seminar, Cornell University
+  type: Invited Talk
+  year: 2023
+
+- title: "Investigating the Relationship Between Burying Beetles (<em>Nicrophorus</em> spp.) and Associated Microbial Symbionts"
+  venue: Animal-Microbe Symbioses, Gordon Research Conference, Lucca, Italy
+  type: Poster
+  year: 2023
+
+- title: "Evolution of Yeast Symbionts from Burying Beetles (<em>Nicrophorus</em> spp.)"
+  venue: Animal-Microbe Symbioses, Gordon Research Seminar, Lucca, Italy
+  type: Poster
+  year: 2023
+
+- title: "An Investigation into Burying Beetle (<em>Nicrophorus</em> spp.) Symbionts"
+  venue: Evolution Meeting, Cleveland, OH
+  type: Conference Talk
+  year: 2022

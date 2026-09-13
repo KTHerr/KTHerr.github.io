@@ -1,212 +1,315 @@
 ---
 layout: default
 ---
-{% assign theme = site.data.themes[site.ui_theme] %}
+{% include icons.html %}
+{% include organisms.html %}
 
-<!--  HELP TIPS SECTION  -->
-<!-- used only for develop mode, disable these in _config.yml with `help_tips: false` -->
-{% if site.help_tips %}
-<div class="toast animate__animated animate__pulse animate__infinite" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false" data-delay="10000" style="position: absolute; top: 10px; right: 10px;z-index: 10000;">
-  <div class="toast-header">
-    <img src="/assets/img/icons/favicon-16x16.png" class="rounded mr-2" alt="...">
-    <strong class="mr-auto">Tyler Butler</strong>
-    <small class="text-muted">11 mins ago</small>
-    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="toast-body">
-    Thanks for checking out Jekyll-Theme-Dumbarton ! This theme was developed by <a href="https://twitter.com/tbutler0x90">Tyler Butler</a>. If you're interested in using this in your own website, checkout the project on <a href="https://github.com/tcbutler320/Jekyll-Theme-Dumbarton">Github</a>
-  </div>
-</div>
-{% endif %}
+<section class="hero">
+  <div class="container">
+    <div class="hero-art">
+      <div class="tree-nav">
+        {{ hero_phylogeny }}
 
-<!-- ABOUT ME SECTION -->
-<div class="card mx-auto border-0" style="position:relative;background-color:{{theme.home-background-color}};">
-  <div class="row">
-    <div class="col-md-4">
-      {% if site.animate %}
-        <img src="{{ site.profile_image }}" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" alt="...">
-      {% else %}
-        <img src="{{ site.profile_image }}" class="img-thumbnail float-left" alt="...">
-      {% endif %}
+        <!-- specimens arranged in the gaps between branches, like a plate -->
+        <span class="floating-icon wide" style="left:29.8%;top:15.1%;">{{ org_caulobacter }}</span>
+        <span class="floating-icon wide" style="left:70.2%;top:15.1%;">{{ org_pseudomonas }}</span>
+        <span class="floating-icon wide edge" style="left:90.3%;top:50.0%;">{{ org_aphid }}</span>
+        <span class="floating-icon tall" style="left:70.2%;top:84.9%;">{{ org_beetle }}</span>
+        <span class="floating-icon wide" style="left:29.8%;top:84.9%;">{{ org_pea }}</span>
+        <span class="floating-icon wide edge" style="left:9.7%;top:50.0%;">{{ org_yeast }}</span>
+
+        <div class="tree-portrait">
+          <img src="{{ site.profile_image | relative_url }}" alt="Portrait of {{ site.author }}">
+        </div>
+        <a class="tree-tip" style="left:50.00%;top:8.40%;" href="#skills">{{ icon_bars }} Skills</a>
+        <a class="tree-tip" style="left:86.02%;top:29.20%;" href="#teaching">{{ icon_book }} Teaching</a>
+        <a class="tree-tip" style="left:86.02%;top:70.80%;" href="#experience">{{ icon_leaf }} Experience</a>
+        <a class="tree-tip" style="left:50.00%;top:91.60%;" href="#funding">{{ icon_award }} Funding</a>
+        <a class="tree-tip" style="left:13.98%;top:70.80%;" href="#research">{{ icon_dna }} Research</a>
+        <a class="tree-tip" style="left:13.98%;top:29.20%;" href="#publications">{{ icon_flask }} Publications</a>
+      </div>
     </div>
-    <!-- EDUCATION SECTION -->
-    <div class="col-md-8">
-      {% if site.animate %}
-      <div class="card-body animate__animated animate__fadeInRight" style="color:{{theme.education-font-color}};">
-      {% else %}
-      <div class="card-body mt-0" style="color:{{theme.education-font-color}};">
-      {% endif %}
-        <p style="color:{{theme.education-font-color}};">{{ content | markdownify}}<p>
-        {% if site.home_option == "education" %}
-          {% include education.html %}
-        {% endif %}
+    <div class="hero-copy">
+      <span class="eyebrow">Evolutionary Microbiology</span>
+      <h1>Kathryn Herr, Ph.D.</h1>
+      <p class="role">{{ site.occupation }}</p>
+      <ul class="credentials">
+        <li>{{ icon_award }} <span>NIH IRACDA FIRST Postdoctoral Teaching Fellow, Emory University (2024&#8211;25)</span></li>
+        <li>{{ icon_book }} <span>Ph.D. Microbiology, Cornell University</span></li>
+        <li>{{ icon_pin }} <span>Based in Bath, UK &#183; right to work in the UK (High Potential Individual visa)</span></li>
+      </ul>
+      {{ content }}
+      <div class="hero-actions">
+        <a class="btn primary" href="{{ '/assets/pdf/CV_KathrynHerr_2026.pdf' | relative_url }}">{{ icon_pdf }} Download CV</a>
+        {% include email-link.html class="btn amber" icon=true show=true label="Email me" %}
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- style="font-family:{{ theme.link-font }};background-color:{{ theme.nav-color }}; -->
+<section id="education">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="icon-badge">{{ icon_cap }}</span>
+        <h2>Academic path</h2>
+      </div>
+    </div>
+    {% include education.html %}
+  </div>
+</section>
 
-<!-- HOME HIGHLIGHTS SECTION --> 
-{% if site.animate %}
-<div class="card mx-auto animate__animated animate__slideInUp animate__delay-1s glowing-border" style="max-width: 100%;">
-{% else %}
-<div class="card mx-auto mb-1 border-0"  style="max-width: 100%;">
-{% endif %}
-  <div class="card-header" style="background-color:{{ theme.home-highlight-background }};">
-    <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
-      {% for section in site.data.sections %}
-        {% if section.first %}
-          <li class="nav-item">
-            <a class="nav-link shadow-none" id="{{ section.jsid }}" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="true" style="font-family:{{ theme.font}};color:{{ theme.home-highlight-header-text}};">{{section.emoji}} {{section.name}}</a>
-          </li>
-        {% else %}
-          <li class="nav-item">
-              <a class="nav-link" id="{{ section.jsid }}" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="true" style="font-family:{{ theme.font}};color:{{ theme.home-highlight-header-text}};">{{section.emoji}} {{section.name}}</a>
-          </li>
-        {% endif %}
+<section id="research">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="icon-badge">{{ icon_dna }}</span>
+        <h2>Research</h2>
+        <p class="lede">How do microbes and their animal or plant hosts shape one another over evolutionary time?</p>
+      </div>
+    </div>
+    <div class="research-grid cols-3">
+      {% for area in site.data.research %}
+        <div class="research-card">
+          <h3>{{ area.name }}</h3>
+          {% if area.system %}<p class="specimen-system">{{ area.system }}</p>{% endif %}
+          <p>{{ area.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="section-head subhead print-hide">
+      <div>
+        <span class="icon-badge">{{ icon_microbe }}</span>
+        <h2>Study systems</h2>
+      </div>
+    </div>
+    {% include cladogram.html %}
+  </div>
+</section>
+
+<section id="teaching">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="icon-badge">{{ icon_book }}</span>
+        <h2>Teaching</h2>
+      </div>
+    </div>
+    <ul class="entry-list">
+      {% for course in site.data.teaching %}
+        <li class="entry">
+          <div class="entry-head">
+            <h3>{{ course.Program }}</h3>
+            <span class="entry-meta">{{ course.Date }}</span>
+          </div>
+          <div class="entry-role">{{ course.Role }} &#183; {{ course.School }}</div>
+          <p style="margin:0;">{{ course.description }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <div class="section-head subhead">
+      <div>
+        <span class="icon-badge">{{ icon_cap }}</span>
+        <h2>Teaching training</h2>
+      </div>
+    </div>
+    <ul class="entry-list compact">
+      {% for course in site.data.teaching_training %}
+        <li class="entry">
+          <div class="entry-head">
+            <h3>{{ course.name }}</h3>
+            <span class="entry-meta">{{ course.date }}</span>
+          </div>
+          <div class="entry-role">{{ course.host }} &#183; {{ course.subject }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <div class="section-head subhead">
+      <div>
+        <span class="icon-badge">{{ icon_people }}</span>
+        <h2>Mentoring</h2>
+      </div>
+    </div>
+    <p class="lede">
+      I have advised and supported seven undergraduate researchers through independent
+      projects: three over six years in the Hendry Lab at Cornell, three summer researchers
+      on the Microbial Friends and Foes REU, and an honours research student during my
+      postdoc at Emory. Mentoring is one of the most rewarding parts of the job, and it
+      shapes how I teach.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="icon-badge">{{ icon_bars }}</span>
+        <h2>Skills &amp; Tools</h2>
+      </div>
+    </div>
+    <div class="research-grid cols-3">
+      <div class="research-card">
+        <span class="icon-badge">{{ icon_book }}</span>
+        <h3>Teaching &amp; Curriculum</h3>
+        <p>
+          <span class="badge">Course design &amp; redesign</span>
+          <span class="badge">Lecturing (300+ students)</span>
+          <span class="badge">Laboratory teaching</span>
+          <span class="badge">Learning outcomes</span>
+          <span class="badge">Assessment &amp; rubric design</span>
+          <span class="badge">Marking &amp; feedback</span>
+          <span class="badge">Active learning</span>
+          <span class="badge">Flipped classroom</span>
+          <span class="badge">Inclusive teaching practice</span>
+          <span class="badge">Project supervision</span>
+          <span class="badge">Moodle-like systems</span>
+          <span class="badge">Online teaching &amp; delivery</span>
+          <span class="badge">Workshop delivery</span>
+        </p>
+      </div>
+      <div class="research-card">
+        <span class="icon-badge">{{ icon_dna }}</span>
+        <h3>Bioinformatics &amp; Computation</h3>
+        <p>
+          <span class="badge">Bash</span>
+          <span class="badge">Python</span>
+          <span class="badge">R / R Markdown</span>
+          <span class="badge">Git / GitHub</span>
+          <span class="badge">Docker / Singularity</span>
+          <span class="badge">Jupyter / Binder</span>
+          <span class="badge">SPAdes / Discovar</span>
+          <span class="badge">BWA / Bowtie2 / SAMtools</span>
+          <span class="badge">FastQC / CheckM / BUSCO</span>
+          <span class="badge">BLAST / RAST / Braker2</span>
+          <span class="badge">MEGA / MetaPhlAn / PhyloPhlAn</span>
+        </p>
+      </div>
+      <div class="research-card">
+        <span class="icon-badge">{{ icon_flask }}</span>
+        <h3>Laboratory &amp; Field</h3>
+        <p>
+          <span class="badge">Sterile technique &amp; culturing</span>
+          <span class="badge">Confocal microscopy</span>
+          <span class="badge">Fluorescent proteins</span>
+          <span class="badge">Plaque &amp; phage assays</span>
+          <span class="badge">Plate reader assays</span>
+          <span class="badge">ImageJ</span>
+          <span class="badge">DNA synthesis &amp; Sanger sequencing</span>
+          <span class="badge">Insect behavioural assays</span>
+          <span class="badge">Field sampling &amp; transects</span>
+          <span class="badge">Media &amp; reagent preparation</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="icon-badge">{{ icon_flask }}</span>
+        <h2>Publications</h2>
+      </div>
+      <a class="btn" href="https://orcid.org/{{ site.orcid }}" target="_blank" rel="noopener">{{ icon_orcid }} View on ORCID</a>
+    </div>
+
+    {% bibliography -f papers %}
+  </div>
+</section>
+
+<section id="funding">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="icon-badge">{{ icon_award }}</span>
+        <h2>Funding &amp; Awards</h2>
+      </div>
+    </div>
+    <ul class="entry-list">
+      {% for award in site.data.awards %}
+        <li class="entry">
+          <div class="entry-head">
+            <h3>{{ award.name }}</h3>
+            <span class="entry-meta">{{ award.year }}</span>
+          </div>
+          <div class="entry-role">{{ award.institution }}{% if award.amount %} &#183; {{ award.amount }}{% endif %}</div>
+          {% if award.detail %}<p style="margin:0;">{{ award.detail }}</p>{% endif %}
+        </li>
       {% endfor %}
     </ul>
   </div>
-  <div class="card-body">          
-      <div class="tab-content mt-3">
-        {% for section in site.data.sections %}
-          {% if section.first %}
-            {% if section.name == "Publications" %}
-            <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-              <p><i>{{section.description}}</i></p>
-                  {% for papers in site.data.publications %}
-                  <div class="list-group">
-                    <div class="list-group-item list-group-item-action">
-                      <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">{{ papers.Title }}</h5>
-                        <h6>{{ papers.Authors }}</h4>
-                        <small>{{ papers.Journal }}</small>
-                      </div>
-                      <p class="mb-1">{{ papers.Link }}</p>
-                      <small>{{ courses.Department }}</small>
-                    </div>
-                  </div>
-                  {% endfor %}
-            </div>
-            {% else %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">
-                <p class="card-text">{{section.description}}</p>
-              </div>
-            {% endif %}
-          {% else %}  
-            {% if section.name == "Presentations" %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <p><i>{{section.description}}</i></p>
-                <p class="card-text">{% bibliography -f presentations %}</p>              
-              </div>
-            {% elsif section.name == "Projects" %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <p><i>{{section.description}}</i></p>
-                  {% for projects in site.data.projects %}
-                  <div class="media mt-2">
-                    <a href="{{ projects.link }}"><img src="{{ projects.image }}" class="mr-3 mb-2 img-thumbnail border-0" alt="..."></a>
-                    <div class="media-body">
-                      <h5 class="mt-0"><a href="{{ projects.link }}" class="highlighted">{{ projects.name }}</a></h5>
-                      {{ projects.description }}
-                      {% if projects.tech %}
-                        <h6><mark><u>Technologies</u></mark></h6>
-                        {% for tech in projects.tech %}
-                        <span class="badge badge-secondary mr-1" style="background-color:{{ theme.projects-color }};">{{ tech }}</span>
-                        {% endfor %}
-                      {% endif %}
-                    </div>
-                  </div>
-                  {% endfor %}
-                </div>        
-              </div>
-            {% elsif section.name == "Teaching" %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <p><i>{{section.description}}</i></p>
-                    {% for courses in site.data.teaching %}
-                    <div class="list-group">
-                      <div class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">{{ courses.School }}</h5>
-                          <h4>{{ courses.Program }}</h4>
-                          <small>{{ courses.Date }}</small>
-                        </div>
-                        <p class="mb-1">{{ courses.description }}</p>
-                        <small>{{ courses.Department }}</small>
-                      </div>
-                    </div>
-                    {% endfor %}
-              </div>
-              {% elsif section.name == "Non-Academic Work" %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <p><i>{{section.description}}</i></p>
-                    {% for job in site.data.nonacademicwork %}
-                    <div class="list-group">
-                      <div class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">{{ job.company }}</h5>
-                          <p>{{ job.role }}</p>
-                          <small>{{ job.start }} - {{ job.end }}</small>
-                        </div>
-                        <p class="mb-1">{{ job.description }}</p>
-                      </div>
-                    </div>
-                    {% endfor %}
-              </div>
-            {% elsif section.name == "Coursework" %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <p><i>{{section.description}}</i></p>
-                <div class="list-group">
-                {% for courses in site.data.courses %}
-                  <button type="button" class="list-group-item text-left">{{ courses.Course }}</button>
-                {% endfor %}
-                </div>
-              </div>
-            {% else %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
-                <p class="card-text">{{ section.content }} </p>              
-              </div>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
+</section>
+
+<section id="talks">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="icon-badge">{{ icon_talk }}</span>
+        <h2>Talks &amp; Posters</h2>
       </div>
+    </div>
+    <ul class="entry-list">
+      {% for talk in site.data.presentations %}
+        <li class="entry">
+          <div class="entry-head">
+            <h3>{{ talk.title }}</h3>
+            <span class="entry-meta">{{ talk.year }}</span>
+          </div>
+          <div class="entry-role">{{ talk.type }}</div>
+          <p style="margin:0;">{{ talk.venue }}</p>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
-</div>
+</section>
 
+<section id="outreach">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="icon-badge">{{ icon_globe }}</span>
+        <h2>Outreach</h2>
+      </div>
+    </div>
+    <ul class="entry-list">
+      {% for program in site.data.outreach %}
+        <li class="entry">
+          <div class="entry-head">
+            <h3>{{ program.name }}</h3>
+            <span class="entry-meta">{{ program.date }}</span>
+          </div>
+          <div class="entry-role">{{ program.role }}</div>
+          <p style="margin:0;">{{ program.description }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
 
-
-<!-- ANIMATE.JS ANIMATE LIBRARY
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
--->
-
-
-<!--JS FUNCTION FOR RECENT WORK SECTION -->
-<script>
-    $('#test-list a').on('click', function (e) {
-    e.preventDefault()
-    $(this).tab('show')
-    })
-</script> 
-
-<!-- OPTIONAL TOAST JS FUNCTION-->
-<script>
-    $(document).ready(function() {
-        $(".toast").toast("show");
-    });
-</script>
-
-
-<script>
-$('body').scrollspy({ target: '#list-example' })
-</script>
-
-<script>
-$('.collapse').collapse()
-</script>
-
-<script>
-$('.show').show()
-</script>
+<section id="experience">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="icon-badge">{{ icon_leaf }}</span>
+        <h2>Other Notable Research &amp; Lab Experience</h2>
+      </div>
+    </div>
+    <ul class="entry-list">
+      {% for job in site.data.experience %}
+        <li class="entry">
+          <div class="entry-head">
+            <h3>{{ job.role }}</h3>
+            <span class="entry-meta">{{ job.start }} &#8211; {{ job.end }}</span>
+          </div>
+          <div class="entry-role">{{ job.company }}{% if job.location %} &#183; {{ job.location }}{% endif %}</div>
+          <p style="margin:0;">{{ job.description }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

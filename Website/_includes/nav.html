@@ -1,21 +1,58 @@
-{% assign theme = site.data.themes[site.ui_theme] %}
-<nav class="navbar navbar-expand-lg glowing-border mb-4" style="font-family:{{ theme.link-font }};background-color:{{ theme.nav-color }};">
-  <a class="navbar-brand" href="/index.html"><h4 style="font-family:{{ theme.title-font }};font-weight:600;color:{{ theme.nav-text}};">{{ site.title }}</h4></a>
-  <button class="navbar-toggler text-{{ theme.button-color }}" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="{{ site.nav-dIcon }}"></i>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-        {% for item in site.data.nav.links %}
-              <li class="nav-item">
-                  <a href="{{ item.url }}" class="nav-link" style="font-family:{{ theme.link-font }};color:{{ theme.nav-text}};">{{ item.title }}</a>
-              </li>
-        {% endfor %}
-    </ul>
-    <ul class="navbar-nav  justify-content-end">
-      <li class="nav-item">
+{% include icons.html %}
+<header class="site-header">
+  <div class="nav-row">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      {{ icon_microbe }}
+      <span>{{ site.title }}</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">
+      {{ icon_menu }}
+    </button>
+    <ul class="nav-links" id="navLinks">
+      {% for item in site.data.nav.links %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {% endfor %}
+      <li class="nav-social">
         {% include social.html %}
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+          {{ icon_sun }}{{ icon_moon }}
+        </button>
       </li>
     </ul>
   </div>
-</nav>
+</header>
+
+<script>
+  (function () {
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    if (!toggle || !links) return;
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  })();
+
+  /* Theme toggle. With no stored choice the page follows the OS setting; one
+     click pins the opposite of whatever is showing, and the choice is
+     remembered. The head script applies it before first paint. */
+  (function () {
+    var btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    var mq = window.matchMedia('(prefers-color-scheme: dark)');
+    var current = function () {
+      return document.documentElement.getAttribute('data-theme') || (mq.matches ? 'dark' : 'light');
+    };
+    var label = function () {
+      btn.setAttribute('aria-label', current() === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+    };
+    label();
+    btn.addEventListener('click', function () {
+      var next = current() === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      label();
+    });
+    if (mq.addEventListener) { mq.addEventListener('change', label); }
+  })();
+</script>

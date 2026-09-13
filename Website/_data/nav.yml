@@ -1,13 +1,17 @@
-nav_list_title: Navigation List
+nav_list_title: Navigation
 links:
 
-#- title: About
-#  url: about.html
+- title: Research
+  url: /#research
 
-#- title: Publications
-#  url: publications.html
+- title: Teaching
+  url: /#teaching
 
+- title: Publications
+  url: /#publications
+
+- title: Experience
+  url: /#experience
 
 - title: CV
-  url: /assets/pdf/vitae.pdf
-
+  url: /assets/pdf/CV_KathrynHerr_2026.pdf

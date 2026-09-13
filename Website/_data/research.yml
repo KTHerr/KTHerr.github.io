@@ -1,0 +1,29 @@
+# Descriptions are kept to what the published work actually shows — claims here
+# should stay traceable to the papers listed in _bibliography/papers.bib.
+
+- name: Phyllosphere <em>Pseudomonas</em> and aphid behaviour
+  system: "<em>Pseudomonas</em> spp. · pea aphids"
+  description: >
+    Leaf surfaces carry dense and variable bacterial communities, and the insects feeding
+    there meet those microbes first. For my dissertation I tested how common fluorescent
+    <em>Pseudomonas</em> from the phyllosphere affect aphid behaviour. Different bacterial
+    strains changed that behaviour in substantially different ways, which matters for how
+    these everyday, non-obligate symbioses evolve.
+
+- name: Burying beetles and their <em>Yarrowia</em> symbionts
+  system: "<em>Nicrophorus</em> spp. · <em>Yarrowia</em>-like yeasts"
+  description: >
+    Burying beetles (<em>Nicrophorus</em> spp.) locate, bury and preserve small vertebrate
+    carcasses, and carry yeast symbionts with them while they do it. Sampling wild
+    populations in the Adirondack Mountains, I examined how diverse these
+    <em>Yarrowia</em>-like yeasts are across beetle species and what their evolutionary
+    history says about how the association is maintained.
+
+- name: <em>Caulobacter</em> exopolysaccharide and phage defence
+  system: "<em>Caulobacter crescentus</em> · bacteriophage"
+  description: >
+    <em>Caulobacter crescentus</em> secretes an extracellular polysaccharide layer that
+    prevents bacteriophage from binding to the cell. Using confocal microscopy, fluorescent
+    proteins and plaque assays, I measured that layer across diverse strains and how well
+    each resisted infection. Strains investing more in exopolysaccharide grew more slowly,
+    a trade-off between protection and proliferation.

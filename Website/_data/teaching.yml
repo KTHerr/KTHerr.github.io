@@ -1,72 +1,93 @@
-- School: Cornell
-  Degree: 
-  Program: Computational Approaches for Microbial Systems BIOMI 6300
-  id: 
-  data-id: 
-  heading-id: 
+- Program: "BIO306: Principles of Microbiology"
+  School: Morehouse College
+  Role: Instructor
+  Date: 2025
+  description: >
+    Co-taught this established upper-level course and redesigned parts of it to bring in
+    more active learning and student-centred work, including spreading assessment across
+    more and smaller assignments to make the course more accessible. Wrote, marked and
+    built rubrics for seven assignments, a group project and four unit exams. Taught the
+    unit on microbial interactions and applied microbiology on my own, co-taught the unit
+    on microbial history and cell structure, and held weekly in-person and online office
+    hours.
+
+- Program: "BIOMI 6300: Computational Approaches for Microbial Systems"
+  School: Cornell University
+  Role: Guest Instructor
   Date: 2023
-  first: true   # one must be true to properly display
   description: >
-    <ul>
-    <li>Designed learning outcomes and developed a case study from my own research to teach upper-
-    level approaches to bioinformatic analysis and interpretation of next generation sequencing data.</li>
-    <li>Utilized active learning strategies (think-pair-share, popcorn, PollEverywhere survey) to engage
-      students, promote in-class discussion, and assess student take-aways.</li>
-    <li>Learning outcomes:
-      <ul>
-      <li> Learn how both genomic and metagenomic sequencing can be harnessed to explore hypotheses</li>
-      <li>Explore trade-offs from different types of sequencing (genomic vs. metagenomic) and different
-      levels of sequencing (shallow vs. deep)</li>
-      </ul></li>
-    </ul>
+    Designed learning outcomes and built a case study from my own research to teach
+    upper-level bioinformatic analysis of next-generation sequencing data, using active
+    learning (think-pair-share, live polling) to explore trade-offs between genomic and
+    metagenomic, shallow and deep sequencing.
 
-- School: Cornell
-  Degree: 
-  Program: BioG 1500 - Investigative Biology 
-  id: 
-  data-id: 
-  heading-id: 
-  Date: Fall 2022, Spring & Fall 2023
-  first: true   # one must be true to properly display
+- Program: Software Carpentry Workshop
+  School: Cornell University
+  Role: Workshop Helper
+  Date: 2023
   description: >
-    
+    Gave one-on-one support across a three-day workshop, helping attendees install and use
+    R, RStudio, and GitHub, and troubleshooting issues across Mac, Windows, and Linux.
 
-- School: Cornell
-  Degree: 
-  Program: BioMI 2600 - Microbiology of Human Contagious Diseases 
-  id: 
-  data-id: 
-  heading-id: 
-  Date: Fall 2021
-  first: true   # one must be true to properly display
+- Program: "BioG 1500: Investigative Biology"
+  School: Cornell University
+  Role: Guest Lecturer &amp; Graduate Teaching Assistant
+  Date: 2022–2023
   description: >
+    Lectured the full 300-student course on the scientific method and hypothesis building,
+    and taught two 3-hour, 18-student lab sections a week. Guided small groups from writing
+    a research proposal on green algae and nutrient limitation through to experimental
+    design, data analysis in R and Excel, figures, and a written scientific article, and
+    supervised the undergraduate teaching assistants supporting the sections.
 
-- School: Cornell
-  Degree: 
-  Program: BioMI 1100 - College Dorm Microbiology 
-  id: 
-  data-id: 
-  heading-id: 
-  Date: Spring 2019, 2020 
-  first: true   # one must be true to properly display
+- Program: "BIOMI 2600: Microbiology of Human Contagious Diseases"
+  School: Cornell University
+  Role: Graduate Teaching Assistant
+  Date: 2021
   description: >
+    Facilitated remote discussions on infectious disease and microbiology, held office hours
+    and small-group review sessions, wrote exam questions, and moved lecture and assessment
+    materials onto Canvas, using its analytics to find where students were struggling.
 
-- School: Cornell
-  Degree: 
-  Program: Microbial Friends and Foes Summer REU 
-  id: 
-  data-id: 
-  heading-id: 
-  Date: Summer 2019 
-  first: true   # one must be true to properly display
+- Program: "BIOMI 1100: College Dorm Microbiology"
+  School: Cornell University
+  Role: Graduate Teaching Assistant
+  Date: 2019–2020
   description: >
+    Led three weekly 2-hour discussion sections connecting microbiology to everyday life,
+    and guided students through independent projects: writing a proposal, sampling and
+    culturing a microbial community of their own choosing, then analysing the resulting
+    16S data and writing it up as a scientific article.
 
-- School: Cornell
-  Degree: 
-  Program: BioMI 2500 - Public Health Microbiology 
-  id: 
-  data-id: 
-  heading-id: 
-  Date: Fall 2018 
-  first: true   # one must be true to properly display
+- Program: Microbial Friends and Foes Summer REU
+  School: Cornell University
+  Role: Guest Lecturer &amp; Graduate Teaching Assistant
+  Date: 2019–2021
   description: >
+    Designed and taught a recurring workshop on how to read scientific articles for
+    undergraduates from underrepresented backgrounds, and served as a teaching assistant
+    and student liaison for the broader summer research program.
+
+- Program: "BIOMI 2500: Public Health Microbiology"
+  School: Cornell University
+  Role: Graduate Teaching Assistant
+  Date: 2018–2019
+  description: >
+    Taught in a flipped classroom where students met concepts through coursework and worked
+    problems in class, guiding small groups through public health case studies and
+    encouraging them to reason through unfamiliar material independently.
+
+- Program: "BIO250: Microbiology (Lab)"
+  School: Willamette University
+  Role: Teaching Assistant
+  Date: 2015–2016
+  description: >
+    Supported students in designing and running independent microbiology experiments, set up
+    the laboratory space each week, and prepared all media and reagents.
+
+- Program: "BIO130: Cell Biology &amp; Genetics"
+  School: Willamette University
+  Role: Teaching Assistant
+  Date: 2015
+  description: >
+    Held office hours and exam review sessions, and graded coursework throughout the term.

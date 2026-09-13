@@ -1,16 +1,20 @@
-<div class="navbar navbar-default navbar-fixed-bottom">
-  <div class="container">
-    <p class="navbar-text pull-left">© 2020 - Theme Built By Tyler Butler, See it on
-        <a href="https://github.com/tcbutler320/Jekyll-Theme-Dumbarton" target="_blank" >GitHub</a>
-    </p>
-    <p class="navbar-text pull-right">
-            {% include social-footer.html %}
-    </p>
+<footer class="site-footer">
+  <div class="container footer-row">
+    <div>
+      <strong style="color:#fff;">{{ site.title }}</strong>
+      <div class="footer-note">{{ site.occupation }}</div>
+      <div class="footer-note">{{ icon_pin }} {{ site.location }}</div>
+    </div>
+    <div class="footer-social">
+      {% include social.html %}
+    </div>
   </div>
-</div> 
-
-<script>
-  $(function () {
-    $('[data-toggle="popover"]').popover()
-  })
-</script>
+  <div class="container footer-meta">
+    <div class="footer-note">&copy; {{ site.time | date: '%Y' }} {{ site.author }}.</div>
+    {% if site.repository %}
+      <a class="footer-note repo-link" href="https://github.com/{{ site.repository }}" target="_blank" rel="noopener">
+        {{ icon_github }} Source on GitHub
+      </a>
+    {% endif %}
+  </div>
+</footer>

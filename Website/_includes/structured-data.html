@@ -1,0 +1,54 @@
+{% comment %}
+  schema.org metadata so search engines and scholarly tools can resolve this
+  page to a person and to her ORCID record. Only facts stated elsewhere on the
+  site (and traceable to the CV) are asserted here. The email address is
+  deliberately omitted — this block is plain text in the page source and would
+  hand it straight to harvesters.
+{% endcomment %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Kathryn Herr",
+    "givenName": "Kathryn",
+    "familyName": "Herr",
+    "honorificSuffix": "Ph.D.",
+    "jobTitle": "Researcher in insect–microbe symbiosis",
+    "description": {{ site.description | jsonify }},
+    "image": "{{ site.url }}{{ site.image }}",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "ORCID",
+      "value": "{{ site.orcid }}",
+      "url": "https://orcid.org/{{ site.orcid }}"
+    },
+    "sameAs": [
+      "https://orcid.org/{{ site.orcid }}",
+      "https://www.linkedin.com/in/{{ site.linkedin }}"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bath",
+      "addressCountry": "GB"
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Emory University" },
+      { "@type": "CollegeOrUniversity", "name": "Cornell University" },
+      { "@type": "CollegeOrUniversity", "name": "Willamette University" }
+    ],
+    "knowsAbout": [
+      "Host-microbe symbiosis",
+      "Evolutionary biology",
+      "Microbiology",
+      "Entomology",
+      "Microbial ecology",
+      "Bioinformatics",
+      "Next-generation sequencing",
+      "Science pedagogy",
+      "University teaching"
+    ]
+  }
+}
+</script>

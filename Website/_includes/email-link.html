@@ -1,0 +1,20 @@
+{%- comment -%}
+  Spam-resistant email link.
+
+  The address never appears in the served HTML as a single string: the local
+  part and the domain are emitted separately and each reversed, so nothing in
+  the markup matches the user@host pattern harvesters scan for. The link is
+  assembled in the browser by the small script in _layouts/default.html.
+
+  Params:
+    include.class  extra classes for the <a>
+    include.label  visible text (omit for an icon-only link)
+    include.icon   any truthy value to prefix the envelope glyph
+    include.show   any truthy value to render the address as the link text
+{%- endcomment -%}
+{%- assign eu = site.email_user | split: "" | reverse | join: "" -%}
+{%- assign ed = site.email_domain | split: "" | reverse | join: "" -%}
+<a class="js-eml {{ include.class }}" href="#" data-u="{{ eu }}" data-d="{{ ed }}"
+   {% if include.show %}data-show="1"{% endif %}
+   title="Email" aria-label="Email {{ site.author }}" rel="nofollow"
+   >{% if include.icon %}{{ icon_mail }}{% endif %}{% if include.label %}<span class="eml-text">{{ include.label }}</span>{% endif %}</a>

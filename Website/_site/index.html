@@ -1,523 +1,2447 @@
 <!DOCTYPE html>
-
-<html>
-  <meta charset="utf-8">
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--
-  The above 2 meta tags *must* come first in the <head>
-  to consistently ensure proper document rendering.
-  Any other head element should come *after* these tags.
- -->
-<title>Kathryn Herr</title>
-<!-- Set the base URL for all relative URLs within the document -->
-<base href="http://localhost:4000">
+<title>Kathryn Herr · Researcher in insect–microbe symbiosis</title>
 
-<!--
-  Allows control over where resources are loaded from.
-  Place as early in the <head> as possible, as the tag  
-  only applies to resources that are declared after it.
--->
-
-<!-- Short description of the document (limit to 150 characters) -->
-<!-- This content *may* be used as a part of search engine results. -->
-<meta name="description" content="A portfolio website">
-
-<!-- Control the behavior of search engine crawling and indexing -->
-<meta name="robots" content="index,follow"><!-- All Search Engines -->
-<meta name="googlebot" content="index,follow"><!-- Google Specific -->
-
-<!-- Verify website ownership -->
-<meta name="google-site-verification" content=""><!-- Google Search Console -->
-<meta name="yandex-verification" content=""><!-- Yandex Webmasters -->
-<meta name="msvalidate.01" content=""><!-- Bing Webmaster Center -->
-<meta name="alexaVerifyID" content=""><!-- Alexa Console -->
-<meta name="p:domain_verify" content=""><!-- Pinterest Console-->
-<meta name="norton-safeweb-site-verification" content=""><!-- Norton Safe Web -->
-
-<!-- Allows control over how referrer information is passed -->
+<meta name="description" content="Researcher in insect–microbe symbiosis, based in Bath, UK. Host–microbe symbiosis, evolutionary biology, microbiology, entomology and bioinformatics, alongside undergraduate teaching and mentoring.">
+<meta name="robots" content="index,follow">
 <meta name="referrer" content="no-referrer">
 
-<!-- Disable automatic detection and formatting of possible phone numbers -->
-<meta name="format-detection" content="telephone=true">
-
-<!-- Completely opt out of DNS prefetching by setting to "off" -->
-<meta http-equiv="x-dns-prefetch-control" content="on">
-
-<!-- Geo tags -->
-<!-- meta name="ICBM" content="latitude, longitude"-->
-<!-- meta name="geo.position" content="latitude;longitude"-->
-<!-- meta name="geo.region" content="country[-state]"><Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
-<!-- meta name="geo.placename" content="city/town"><eg. content="New York City" -->
-
-<!-- Link to an external CSS file -->
-<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Courgette&family=Lobster&family=Pacifico&family=Yellowtail&family=Noto+Sans+JP:wght@400;900&family=Poppins:wght@500&family=Righteous&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/main.css">
-<!-- BootStrap CDN --> 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<script src="https://kit.fontawesome.com/32a2b2a489.js" crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> 
-
-<!--  GIT TALK CDN  for comment system -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> 
-
-
-<!-- Provides information about an author or another person -->
-<link rel="me" href="mailto:">
-<link rel="me" href="sms:+">
-
-<!-- Open Search -->
-<!-- link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title" -->
-
-<!-- Feeds -->
-<!-- link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS" -->
-<!-- link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3" -->
-
-<!-- For IE 10 and below -->
-<!-- Place favicon.ico in the root directory - no tag necessary -->
+<link rel="icon" href="/assets/img/icons/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
-<link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#175e56">
+<meta name="theme-color" content="#0e332f" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a1310" media="(prefers-color-scheme: dark)">
 
-<meta property="fb:app_id" content="">
-<meta property="og:url" content="http://localhost:4000">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Kathryn Herr, A portfolio website">
-<meta property="og:image" content="/assets/images/herr_katie.jpeg">
-<meta property="og:image:alt" content="A portfolio website">
-<meta property="og:description" content="A portfolio website">
-<meta property="og:site_name" content="Kathryn Herr">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="Kathryn Herr">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@">
-<meta name="twitter:creator" content="@">
-<meta name="twitter:url" content="http://localhost:4000">
-<meta name="twitter:title" content="A portfolio website">
-<meta name="twitter:description" content="A portfolio website">
-<meta name="twitter:image" content="/assets/images/herr_katie.jpeg">
-<meta name="twitter:image:alt" content="A portfolio website">
-
-<!-- Used for adding in-document CSS -->
-
-
-
-<!-- JavaScript & No-JavaScript tags -->
-
-<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/styles/monokai-sublime.min.css">
-<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/highlight.min.js"></script>
-<!-- and it's easy to individually load additional languages -->
-<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/languages/go.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-<!--
 <script>
-    $(document).ready(function() {
-        $(".toast").toast('show');
-    });
-</script> -->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', ');
+  /* Apply a stored theme choice before first paint, so the page never flashes
+     the wrong one. No stored choice means follow the OS setting. */
+  (function () {
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || t === 'light') { document.documentElement.setAttribute('data-theme', t); }
+    } catch (e) {}
+  })();
 </script>
 
-<noscript>
-  <!-- No JS alternative -->
-</noscript>
-  <body style="background-color:;">
-    
-<nav class="navbar navbar-expand-lg glowing-border mb-4" style="font-family:Poppins;background-color:#19BBAA;">
-  <a class="navbar-brand" href="/index.html"><h4 style="font-family:Noto Sans JP;font-weight:600;color:#010101;">Kathryn Herr</h4></a>
-  <button class="navbar-toggler text-black" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fas fa-caret-down"></i>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-        
-              <li class="nav-item">
-                  <a href="/assets/pdf/vitae.pdf" class="nav-link" style="font-family:Poppins;color:#010101;">CV</a>
-              </li>
-        
-    </ul>
-    <ul class="navbar-nav  justify-content-end">
-      <li class="nav-item">
-        
-<!-- Displays Social Media Icons based on _config.yml settings -->
-<span style="color:#CCCCCC;">
-    <i> &nbsp;&nbsp; </i>
-    
-    
-    
-    <a href="https://www.linkedin.com/in/kathryn-herr-a516a4a7/" target="_blank">
-        <img 
-         src="/assets/images/LinkedIN_black.png" 
-         alt="LinkedIn Icon" 
-         style="width: 50px; height: auto;"
-        />
-        </a>
-    
-    
-    
-    
-     
-    <i> &nbsp;&nbsp; </i>
-</span>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kathryn-biology.com/">
+<meta property="og:title" content="Kathryn Herr">
+<meta property="og:description" content="Researcher in insect–microbe symbiosis, based in Bath, UK. Host–microbe symbiosis, evolutionary biology, microbiology, entomology and bioinformatics, alongside undergraduate teaching and mentoring.">
+<meta property="og:image" content="https://kathryn-biology.com/assets/images/herr_katie.jpeg">
+<meta property="og:image:alt" content="Portrait of Kathryn Herr">
+<meta property="og:site_name" content="Kathryn Herr">
+<meta property="og:locale" content="en_GB">
 
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Kathryn Herr">
+<meta name="twitter:description" content="Researcher in insect–microbe symbiosis, based in Bath, UK. Host–microbe symbiosis, evolutionary biology, microbiology, entomology and bioinformatics, alongside undergraduate teaching and mentoring.">
+<meta name="twitter:image" content="https://kathryn-biology.com/assets/images/herr_katie.jpeg">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Kathryn Herr",
+    "givenName": "Kathryn",
+    "familyName": "Herr",
+    "honorificSuffix": "Ph.D.",
+    "jobTitle": "Researcher in insect–microbe symbiosis",
+    "description": "Researcher in insect–microbe symbiosis, based in Bath, UK. Host–microbe symbiosis, evolutionary biology, microbiology, entomology and bioinformatics, alongside undergraduate teaching and mentoring.",
+    "image": "https://kathryn-biology.com/assets/images/herr_katie.jpeg",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "ORCID",
+      "value": "0000-0001-9647-5104",
+      "url": "https://orcid.org/0000-0001-9647-5104"
+    },
+    "sameAs": [
+      "https://orcid.org/0000-0001-9647-5104",
+      "https://www.linkedin.com/in/kathryn-herr-a516a4a7"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bath",
+      "addressCountry": "GB"
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Emory University" },
+      { "@type": "CollegeOrUniversity", "name": "Cornell University" },
+      { "@type": "CollegeOrUniversity", "name": "Willamette University" }
+    ],
+    "knowsAbout": [
+      "Host-microbe symbiosis",
+      "Evolutionary biology",
+      "Microbiology",
+      "Entomology",
+      "Microbial ecology",
+      "Bioinformatics",
+      "Next-generation sequencing",
+      "Science pedagogy",
+      "University teaching"
+    ]
+  }
+}
+</script>
+
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="beetle-rail" aria-hidden="true">
+  <span style="top:3.0%;left:1px;width:29px;height:40px;opacity:0.30;transform:rotate(-14deg);"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:6.8%;left:2px;width:31px;height:43px;opacity:0.43;transform:rotate(11deg);" class="amber"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:10.5%;left:9px;width:29px;height:41px;opacity:0.37;transform:rotate(3deg);"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:14.3%;left:9px;width:39px;height:54px;opacity:0.27;transform:rotate(-2deg);"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:18.0%;left:24px;width:34px;height:48px;opacity:0.28;transform:rotate(-10deg);" class="amber"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:21.8%;left:14px;width:39px;height:54px;opacity:0.31;transform:rotate(14deg);"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:25.6%;left:15px;width:35px;height:49px;opacity:0.45;transform:rotate(11deg);"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:29.3%;left:15px;width:26px;height:37px;opacity:0.35;transform:rotate(0deg);" class="amber"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:33.1%;left:15px;width:38px;height:53px;opacity:0.26;transform:rotate(1deg);"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:36.8%;left:15px;width:25px;height:35px;opacity:0.36;transform:rotate(1deg);"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:40.6%;left:10px;width:29px;height:40px;opacity:0.38;transform:rotate(-21deg);" class="amber"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:44.4%;left:24px;width:36px;height:50px;opacity:0.41;transform:rotate(4deg);"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:48.1%;left:21px;width:34px;height:48px;opacity:0.39;transform:rotate(5deg);"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:51.9%;left:5px;width:27px;height:37px;opacity:0.26;transform:rotate(-4deg);" class="amber"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:55.6%;left:19px;width:25px;height:35px;opacity:0.34;transform:rotate(15deg);"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:59.4%;left:17px;width:28px;height:39px;opacity:0.33;transform:rotate(-7deg);"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:63.2%;left:25px;width:32px;height:45px;opacity:0.31;transform:rotate(-3deg);" class="amber"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:66.9%;left:12px;width:31px;height:44px;opacity:0.35;transform:rotate(-12deg);"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:70.7%;left:24px;width:27px;height:37px;opacity:0.33;transform:rotate(21deg);"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:74.4%;left:13px;width:25px;height:35px;opacity:0.44;transform:rotate(9deg);" class="amber"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:78.2%;left:14px;width:27px;height:37px;opacity:0.42;transform:rotate(16deg);"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:82.0%;left:13px;width:34px;height:48px;opacity:0.35;transform:rotate(15deg);"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:85.7%;left:3px;width:37px;height:51px;opacity:0.45;transform:rotate(-20deg);" class="amber"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:89.5%;left:2px;width:27px;height:38px;opacity:0.35;transform:rotate(6deg);"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:93.2%;left:11px;width:27px;height:38px;opacity:0.42;transform:rotate(19deg);"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+  <span style="top:97.0%;left:23px;width:26px;height:36px;opacity:0.35;transform:rotate(-12deg);" class="amber"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header">
+  <div class="nav-row">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" width="22" height="22"><circle cx="12" cy="12" r="5.2"/><circle cx="12" cy="3.6" r="1.1" fill="currentColor" stroke="none"/><circle cx="19.8" cy="8" r="1.1" fill="currentColor" stroke="none"/><circle cx="19.8" cy="16" r="1.1" fill="currentColor" stroke="none"/><circle cx="4.2" cy="16" r="1.1" fill="currentColor" stroke="none"/><circle cx="4.2" cy="8" r="1.1" fill="currentColor" stroke="none"/><line x1="12" y1="6.8" x2="12" y2="5"/><line x1="16.7" y1="9.3" x2="18.3" y2="8.4"/><line x1="16.7" y1="14.7" x2="18.3" y2="15.6"/><line x1="7.3" y1="14.7" x2="5.7" y2="15.6"/><line x1="7.3" y1="9.3" x2="5.7" y2="8.4"/></svg>
+      <span>Kathryn Herr</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="20" height="20"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      
+        <li><a href="/#research">Research</a></li>
+      
+        <li><a href="/#teaching">Teaching</a></li>
+      
+        <li><a href="/#publications">Publications</a></li>
+      
+        <li><a href="/#experience">Experience</a></li>
+      
+        <li><a href="/assets/pdf/CV_KathrynHerr_2026.pdf">CV</a></li>
+      
+      <li class="nav-social">
+        <a class="js-eml " href="#" data-u="nyrhtak" data-d="moc.ygoloib-nyrhtak"
+   
+   title="Email" aria-label="Email Kathryn Herr" rel="nofollow"
+   ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="m4 6.5 8 6.2 8-6.2"/></svg></a>
+
+
+  <a href="https://www.linkedin.com/in/kathryn-herr-a516a4a7" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor"><rect x="2.5" y="2.5" width="19" height="19" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M7.8 10v7M7.8 7.3v.01M11.4 17v-4c0-1.5.9-2.6 2.3-2.6 1.4 0 2.1 1 2.1 2.6v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></a>
+
+
+  <a href="https://orcid.org/0000-0001-9647-5104" target="_blank" rel="noopener" aria-label="ORCID" title="ORCID"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9.2"/><circle cx="8.9" cy="8" r=".9" fill="currentColor" stroke="none"/><line x1="8.9" y1="10.6" x2="8.9" y2="16.4" stroke-linecap="round"/><path d="M11.8 10.6h1.9c2 0 3.2 1.3 3.2 2.9s-1.2 2.9-3.2 2.9h-1.9v-5.8Z" stroke-linejoin="round"/></svg></a>
+
+
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.2v2.4M12 19.4v2.4M2.2 12h2.4M19.4 12h2.4M5.1 5.1l1.7 1.7M17.2 17.2l1.7 1.7M18.9 5.1l-1.7 1.7M6.8 17.2l-1.7 1.7"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.2A8.3 8.3 0 0 1 9.8 4a8.4 8.4 0 1 0 10.2 10.2Z"/></svg>
+        </button>
       </li>
     </ul>
   </div>
-</nav>
+</header>
 
-    <div class="dumbarton-spacer-sm"></div>
-    <div class="container">
-      
+<script>
+  (function () {
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    if (!toggle || !links) return;
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  })();
 
-<!--  HELP TIPS SECTION  -->
-<!-- used only for develop mode, disable these in _config.yml with `help_tips: false` -->
+  /* Theme toggle. With no stored choice the page follows the OS setting; one
+     click pins the opposite of whatever is showing, and the choice is
+     remembered. The head script applies it before first paint. */
+  (function () {
+    var btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    var mq = window.matchMedia('(prefers-color-scheme: dark)');
+    var current = function () {
+      return document.documentElement.getAttribute('data-theme') || (mq.matches ? 'dark' : 'light');
+    };
+    var label = function () {
+      btn.setAttribute('aria-label', current() === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+    };
+    label();
+    btn.addEventListener('click', function () {
+      var next = current() === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      label();
+    });
+    if (mq.addEventListener) { mq.addEventListener('change', label); }
+  })();
+</script>
+
+<main id="main" tabindex="-1">
 
 
-<!-- ABOUT ME SECTION -->
-<div class="card mx-auto border-0" style="position:relative;background-color:;">
-  <div class="row">
-    <div class="col-md-4">
-      
-        <img src="/assets/images/herr_katie.jpeg" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" alt="...">
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-art">
+      <div class="tree-nav">
+        <svg class="hero-tree" viewBox="-238 -238 476 476" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <g stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
+    <!-- radial branches; the root emerges from behind the portrait -->
+    <path d="M61.49 35.50L72.75 42.00M72.75 42.00L94.69 54.67M54.67 -94.69L80.00 -138.56M-54.67 94.69L-67.33 116.62M67.33 116.62L80.00 138.56M-134.67 0.00L-160.00 0.00"/>
+    <!-- node arcs -->
+    <path d="M94.69 54.67A109.33 109.33 0 0 0 54.67 -94.69M94.69 54.67A109.33 109.33 0 0 1 -54.67 94.69M80.00 -138.56A160 160 0 0 0 0.00 -160.00M80.00 -138.56A160 160 0 0 1 138.56 -80.00M-67.33 116.62A134.67 134.67 0 0 0 67.33 116.62M-67.33 116.62A134.67 134.67 0 0 1 -134.67 0.00M80.00 138.56A160 160 0 0 0 138.56 80.00M80.00 138.56A160 160 0 0 1 0.00 160.00M-160.00 0.00A160 160 0 0 0 -138.56 80.00M-160.00 0.00A160 160 0 0 1 -138.56 -80.00"/>
+  </g>
+  <!-- branch points -->
+  <g fill="currentColor">
+    <circle cx="72.75" cy="42.00" r="4"/>
+    <circle cx="54.67" cy="-94.69" r="3.4"/>
+    <circle cx="-54.67" cy="94.69" r="3.4"/>
+    <circle cx="67.33" cy="116.62" r="3.4"/>
+    <circle cx="-134.67" cy="0.00" r="3.4"/>
+  </g>
+</svg>
+
+        <!-- specimens arranged in the gaps between branches, like a plate -->
+        <span class="floating-icon wide" style="left:29.8%;top:15.1%;"><svg viewBox="0 0 192 106" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Caulobacter crescentus, a crescent-shaped bacterium with a polar stalk and holdfast">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <!-- secreted exopolysaccharide layer -->
+    <path d="M48.3 71.5 Q85 39 121.7 71.5 A17 17 0 0 0 142.3 44.5 Q85 5 27.7 44.5 A17 17 0 0 0 48.3 71.5 Z"
+          stroke-width="1.1" stroke-dasharray="1.6 4.5" opacity="0.7"/>
+    <!-- flagellum at the pole opposite the stalk -->
+    <path d="M38 58 Q32.0 57.5 30.9 63.5 Q29.7 69.4 23.7 68.9 Q17.7 68.5 16.6 74.4 Q15.4 80.4 9.4 79.9" stroke-width="1.5"/>
+    <!-- polar pili -->
+    <path d="M36.5 52 L25 45M35 56.5 L22 54M38.5 48 L31.5 38M41.5 45 L38 34" stroke-width="1.1" opacity="0.8"/>
+    <!-- cell body: vibrioid, rounded poles -->
+    <path d="M43.2 64.7 Q85 30 127.1 64.4 A8 8 0 0 0 136.9 51.6 Q85 14 32.8 51.3 A8 8 0 0 0 43.2 64.7 Z"
+          fill="var(--card, #fff)" stroke-width="2"/>
+    <!-- polar stalk with crossbands -->
+    <path d="M132 58 L167 84.8" stroke-width="3"/>
+    <path d="M140.5 63.5 l4.4 -5.8M149 70 l4.4 -5.8M157.5 76.5 l4.4 -5.8" stroke-width="1.1" opacity="0.9"/>
+  </g>
+  <!-- holdfast -->
+  <ellipse cx="169.6" cy="86.5" rx="6" ry="4.2" fill="var(--accent, #d98a3d)" transform="rotate(37 169.6 86.5)"/>
+</svg></span>
+        <span class="floating-icon wide" style="left:70.2%;top:15.1%;"><svg viewBox="0 0 176 92" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pseudomonas, a rod-shaped bacterium with polar flagella and a fluorescent siderophore halo">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <!-- pyoverdine fluorescence halo -->
+    <rect x="31" y="23" width="104" height="46" rx="23" stroke="var(--accent, #d98a3d)" stroke-width="1.2" stroke-dasharray="1.6 4.5" opacity="0.85"/>
+    <!-- polar flagella (lophotrichous) -->
+    <path d="M126 46 Q134 40 140 46 Q146 52 152 46 Q158 40 165 45" stroke-width="1.5"/>
+    <path d="M124 52 Q133 50 138 57 Q143 64 150 62 Q157 60 163 65" stroke-width="1.5"/>
+    <path d="M124 40 Q133 36 137 29 Q141 22 149 23 Q157 24 161 18" stroke-width="1.5"/>
+    <!-- cell body -->
+    <rect x="42" y="34" width="82" height="24" rx="12" fill="var(--card, #fff)" stroke-width="2"/>
+    <!-- nucleoid hint -->
+    <path d="M60 46 q8 -6 16 0 q8 6 16 0" stroke-width="1.1" opacity="0.5"/>
+  </g>
+</svg></span>
+        <span class="floating-icon wide edge" style="left:90.3%;top:50.0%;"><svg viewBox="0 0 188 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A pea aphid feeding on a leaf, showing long antennae, paired cornicles and a stylet inserted into the leaf">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <!-- leaf surface (the phyllosphere) -->
+    <path d="M10 112 Q80 106 180 111" stroke-width="1.6" opacity="0.55"/>
+    <!-- antennae, long and segmented, held forward and up -->
+    <path d="M40 60 C30 44 26 28 32 13" stroke-width="1.6"/>
+    <path d="M43 57 C37 40 41 24 51 12" stroke-width="1.6" opacity="0.78"/>
+    <path d="M30.5 46 l-4.5 -1.5M27.5 32 l-4.5 -1M31 20 l-4.5 -1" stroke-width="1" opacity="0.65"/>
+    <!-- legs -->
+    <path d="M56 86 L50 100 L61 110" stroke-width="1.6"/>
+    <path d="M80 94 L78 106 L93 111" stroke-width="1.6"/>
+    <path d="M104 96 L125 106 L113 113" stroke-width="1.6"/>
+    <!-- stylet inserted into the leaf (phloem feeding) -->
+    <path d="M37 76 L44 94 L48 111" stroke-width="1.5"/>
+    <!-- far cornicle -->
+    <path d="M110 64 L120 56 L138 41 L132 35 Z" fill="var(--card, #fff)" stroke-width="1.6" opacity="0.6"/>
+    <!-- body -->
+    <path d="M34 70 C36 60 46 54 58 54 C86 50 122 56 136 74 C146 88 134 100 112 99 C84 98 54 90 42 80 C34 74 32 73 34 70 Z"
+          fill="var(--card, #fff)" stroke-width="2"/>
+    <path d="M60 55 q5 14 -1 30" stroke-width="1" opacity="0.42"/>
+    <!-- near cornicle (siphunculus) — diagnostic aphid feature -->
+    <path d="M119 69 L130 60 L150 43 L143 36 Z" fill="var(--card, #fff)" stroke-width="1.9"/>
+    <!-- cauda -->
+    <path d="M136 88 L152 92 L137 96 Z" fill="var(--card, #fff)" stroke-width="1.6"/>
+  </g>
+  <circle cx="44" cy="66" r="2.6" fill="currentColor"/>
+  <!-- cornicle aperture -->
+  <ellipse cx="146.2" cy="39.8" rx="3.6" ry="2.4" fill="var(--accent, #d98a3d)" transform="rotate(-44 146.2 39.8)"/>
+</svg></span>
+        <span class="floating-icon tall" style="left:70.2%;top:84.9%;"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+        <span class="floating-icon wide" style="left:29.8%;top:84.9%;"><svg viewBox="0 0 176 124" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A pea plant leaf: clasping stipules, two pairs of leaflets and terminal branched tendrils">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- rachis -->
+    <path d="M18 84 L112 52"/>
+    <!-- large clasping stipules at the base -->
+    <path d="M20 84 C6 76 6 54 26 48 C36 64 34 80 22 86 Z" fill="var(--card, #fff)"/>
+    <path d="M20 86 C10 100 22 118 40 114 C40 96 33 86 22 84 Z" fill="var(--card, #fff)"/>
+    <path d="M22 82 L25 56M24 90 L35 108" stroke-width="1" opacity="0.5"/>
+    <!-- two pairs of leaflets -->
+    <path d="M44 76 C42 60 54 48 70 50 C70 64 60 76 46 78 Z" fill="var(--card, #fff)"/>
+    <path d="M46 78 C40 92 48 106 64 106 C66 92 60 82 48 78 Z" fill="var(--card, #fff)"/>
+    <path d="M76 64 C76 50 88 40 102 42 C102 55 92 66 78 67 Z" fill="var(--card, #fff)"/>
+    <path d="M78 67 C74 80 82 92 96 91 C97 79 90 70 80 66 Z" fill="var(--card, #fff)"/>
+    <path d="M48 74 L64 56M50 82 L60 98M79 62 L95 48M80 70 L90 84" stroke-width="1" opacity="0.45"/>
+    <!-- terminal leaflets replaced by branched tendrils -->
+    <path d="M112 52 C124 44 130 32 126 22"/>
+    <path d="M112 52 C126 54 138 50 142 40 C144 32 138 28 134 32 C130 36 134 42 142 42"/>
+    <path d="M126 22 C120 16 126 10 132 14 C138 18 134 26 126 24" stroke-width="1.6"/>
+  </g>
+</svg></span>
+        <span class="floating-icon wide edge" style="left:9.7%;top:50.0%;"><svg viewBox="0 0 156 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yarrowia yeast: a budding ovoid cell and the pseudohyphal chain">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <!-- budding mother cell -->
+    <ellipse cx="38" cy="50" rx="24" ry="20" fill="var(--card, #fff)"/>
+    <ellipse cx="69" cy="32" rx="13" ry="11" fill="var(--card, #fff)" transform="rotate(-18 69 32)"/>
+    <circle cx="32" cy="48" r="6" stroke-width="1.1" opacity="0.55"/>
+    <!-- pseudohyphal chain: elongate cells joined at septa -->
+    <path d="M74 76 h22 a9 9 0 0 1 0 18 h-22 a9 9 0 0 1 0 -18 Z" fill="var(--card, #fff)"/>
+    <path d="M96 74 h22 a9 9 0 0 1 0 18 h-22 a9 9 0 0 1 0 -18 Z" fill="var(--card, #fff)"/>
+    <path d="M118 71 h22 a9 9 0 0 1 0 18 h-22 a9 9 0 0 1 0 -18 Z" fill="var(--card, #fff)"/>
+    <path d="M96 78 v14M118 76 v14" stroke-width="1.2" opacity="0.6"/>
+  </g>
+  <!-- bud neck -->
+  <circle cx="61" cy="39" r="2.4" fill="var(--accent, #d98a3d)"/>
+</svg></span>
+
+        <div class="tree-portrait">
+          <img src="/assets/images/herr_katie.jpeg" alt="Portrait of Kathryn Herr">
+        </div>
+        <a class="tree-tip" style="left:50.00%;top:8.40%;" href="#skills"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" width="20" height="20"><line x1="4" y1="19" x2="4" y2="9"/><line x1="9.3" y1="19" x2="9.3" y2="5"/><line x1="14.7" y1="19" x2="14.7" y2="11"/><line x1="20" y1="19" x2="20" y2="7"/></svg> Skills</a>
+        <a class="tree-tip" style="left:86.02%;top:29.20%;" href="#teaching"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M12 6.5c-1.8-1.4-4.3-2-7-2v13c2.7 0 5.2.6 7 2 1.8-1.4 4.3-2 7-2v-13c-2.7 0-5.2.6-7 2Z"/><path d="M12 6.5V19.5"/></svg> Teaching</a>
+        <a class="tree-tip" style="left:86.02%;top:70.80%;" href="#experience"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M20 4c-9 0-16 5-16 14 9 0 14-5 16-14Z"/><path d="M5.5 17.5 15 8"/></svg> Experience</a>
+        <a class="tree-tip" style="left:50.00%;top:91.60%;" href="#funding"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><circle cx="12" cy="8.5" r="5"/><path d="m8.5 12.8-1.8 7.7L12 18l5.3 2.5-1.8-7.7"/></svg> Funding</a>
+        <a class="tree-tip" style="left:13.98%;top:70.80%;" href="#research"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" width="22" height="22"><path d="M7 3c0 6 10 12 10 18M17 3C17 9 7 15 7 21"/><path d="M8.2 6.5h7.6M8.2 17.5h7.6M6.6 10.2h10.8M6.6 13.8h10.8"/></svg> Research</a>
+        <a class="tree-tip" style="left:13.98%;top:29.20%;" href="#publications"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M10 3h4M9.5 3v6.2L5 18.5A1.8 1.8 0 0 0 6.6 21h10.8a1.8 1.8 0 0 0 1.6-2.5L14.5 9.2V3"/><path d="M7.5 15.5h9"/></svg> Publications</a>
+      </div>
     </div>
-    <!-- EDUCATION SECTION -->
-    <div class="col-md-8">
-      
-      <div class="card-body animate__animated animate__fadeInRight" style="color:;">
-      
-        <p style="color:;"><h3 id="hi-im-katie-herr">Hi, I’m Katie Herr</h3>
-<p><em>Postdoctoral researcher and NIH IRACDA FIRST Fellow at Emory University</em></p>
+    <div class="hero-copy">
+      <span class="eyebrow">Evolutionary Microbiology</span>
+      <h1>Kathryn Herr, Ph.D.</h1>
+      <p class="role">Researcher in insect–microbe symbiosis</p>
+      <ul class="credentials">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><circle cx="12" cy="8.5" r="5"/><path d="m8.5 12.8-1.8 7.7L12 18l5.3 2.5-1.8-7.7"/></svg> <span>NIH IRACDA FIRST Postdoctoral Teaching Fellow, Emory University (2024&#8211;25)</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M12 6.5c-1.8-1.4-4.3-2-7-2v13c2.7 0 5.2.6 7 2 1.8-1.4 4.3-2 7-2v-13c-2.7 0-5.2.6-7 2Z"/><path d="M12 6.5V19.5"/></svg> <span>Ph.D. Microbiology, Cornell University</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M12 21s7-6.4 7-12a7 7 0 1 0-14 0c0 5.6 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg> <span>Based in Bath, UK &#183; right to work in the UK (High Potential Individual visa)</span></li>
+      </ul>
+      <p>I study how microbes and the plants and animals that host them shape one another,
+from fluorescent bacteria that influence aphid behaviour to the yeasts that travel
+with a burying beetle. I combine fieldwork, microbiology, and bioinformatics
+to ask evolutionary questions about everyday symbioses. Alongside that research I
+teach undergraduate biology and microbiology, and supervise students through
+research projects of their own.</p>
 
-<p>Thank you for visiting my page. This website is still in progress and will continue to be developed.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="/assets/pdf/CV_KathrynHerr_2026.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M7 2.5h7L18.5 7v14.5H7Z"/><path d="M14 2.5V7h4.5"/></svg> Download CV</a>
+        <a class="js-eml btn amber" href="#" data-u="nyrhtak" data-d="moc.ygoloib-nyrhtak"
+   data-show="1"
+   title="Email" aria-label="Email Kathryn Herr" rel="nofollow"
+   ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="m4 6.5 8 6.2 8-6.2"/></svg><span class="eml-text">Email me</span></a>
 
-<p>My passions for biological research and inclusive teaching have motivated my career. Currently, my research is focused on the evolutionary dynamics of insect-microbe symbiosis, using diverse host and microbe systems. To pursue this research, I’ve developed expertise in microbial dynamics, evolutionary biology, next generation sequencing and bioinformatics.</p>
-
-<p>
-        
-           
-  <h5 class="card-title" style="font-family:Noto Sans JP;font-size:18px;color:;">Academic career</h5>
-  <ul class="list-unstyled">
-  
-    <li class="media">
-      <img 
-         src="/assets/images/emory.svg"
-         alt="..." 
-         class="mr-3" 
-         style="width: 50px; height: auto;"
-        />
-      <div class="media-body">
-        <h5 style="font-family:Noto Sans JP;font-size:18px;color:;">Emory University</h5>
-        <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Postdoctoral researcher and NIH IRACDA FIRST Fellow</i></p>
-        
-      </div>
-    </li>
-    
-    <li class="media">
-      <img 
-         src="/assets/images/cornell.png"
-         alt="..." 
-         class="mr-3" 
-         style="width: 50px; height: auto;"
-        />
-      <div class="media-body">
-        <h5 style="font-family:Noto Sans JP;font-size:18px;color:;">Cornell University</h5>
-        <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Ph.D. Microbiology</i></p>
-        
-      </div>
-    </li>
-    
-    <li class="media">
-      <img 
-         src="/assets/images/willamette.png"
-         alt="..." 
-         class="mr-3" 
-         style="width: 50px; height: auto;"
-        />
-      <div class="media-body">
-        <h5 style="font-family:Noto Sans JP;font-size:18px;color:;">Willamette University</h5>
-        <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Bachelor's in Biology/Bilogical Sciences</i></p>
-        
-      </div>
-    </li>
-    
-  </ul>
-        
       </div>
     </div>
   </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M12 4 2.5 8.6 12 13.2l9.5-4.6L12 4Z"/><path d="M6.4 10.6v4.8c0 1.6 2.5 2.9 5.6 2.9s5.6-1.3 5.6-2.9v-4.8"/><path d="M21.5 8.6v5.2"/></svg></span>
+        <h2>Academic path</h2>
+      </div>
+    </div>
+    <ol class="timeline">
+  
+    <li class="timeline-item">
+      <span class="timeline-icon"><img src="/assets/images/emory.svg" alt="Emory University crest" loading="lazy"></span>
+      <div class="timeline-body">
+        <div class="dates">2024 – 2025</div>
+        <h3>Emory University</h3>
+        <p class="program">IRACDA FIRST Postdoctoral Teaching Fellow, Dept. of Biology</p>
+        <p>NIH Institutional Research and Academic Career Development Award (IRACDA), Fellowships in Research and Science Teaching. Independent research paired with mentored teaching at a partner institution, Morehouse College.
+</p>
+      </div>
+    </li>
+  
+    <li class="timeline-item">
+      <span class="timeline-icon"><img src="/assets/images/cornell.png" alt="Cornell University crest" loading="lazy"></span>
+      <div class="timeline-body">
+        <div class="dates">2018 – 2024</div>
+        <h3>Cornell University</h3>
+        <p class="program">Ph.D., Microbiology</p>
+        <p>Dissertation: <i>The symphony of symbiosis: ecological and evolutionary impacts of microbial interactions with insects.</i>
+</p>
+      </div>
+    </li>
+  
+    <li class="timeline-item">
+      <span class="timeline-icon"><img src="/assets/images/willamette.png" alt="Willamette University crest" loading="lazy"></span>
+      <div class="timeline-body">
+        <div class="dates">2012 – 2016</div>
+        <h3>Willamette University</h3>
+        <p class="program">B.A., Biology (minors in Chemistry &amp; Chinese)</p>
+        <p>Thesis: <i>Secreted extracellular polysaccharide layer prevents phage binding on Caulobacter crescentus.</i>
+</p>
+      </div>
+    </li>
+  
+</ol>
+
+  </div>
+</section>
+
+<section id="research">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" width="22" height="22"><path d="M7 3c0 6 10 12 10 18M17 3C17 9 7 15 7 21"/><path d="M8.2 6.5h7.6M8.2 17.5h7.6M6.6 10.2h10.8M6.6 13.8h10.8"/></svg></span>
+        <h2>Research</h2>
+        <p class="lede">How do microbes and their animal or plant hosts shape one another over evolutionary time?</p>
+      </div>
+    </div>
+    <div class="research-grid cols-3">
+      
+        <div class="research-card">
+          <h3>Phyllosphere <em>Pseudomonas</em> and aphid behaviour</h3>
+          <p class="specimen-system"><em>Pseudomonas</em> spp. · pea aphids</p>
+          <p>Leaf surfaces carry dense and variable bacterial communities, and the insects feeding there meet those microbes first. For my dissertation I tested how common fluorescent <em>Pseudomonas</em> from the phyllosphere affect aphid behaviour. Different bacterial strains changed that behaviour in substantially different ways, which matters for how these everyday, non-obligate symbioses evolve.
+</p>
+        </div>
+      
+        <div class="research-card">
+          <h3>Burying beetles and their <em>Yarrowia</em> symbionts</h3>
+          <p class="specimen-system"><em>Nicrophorus</em> spp. · <em>Yarrowia</em>-like yeasts</p>
+          <p>Burying beetles (<em>Nicrophorus</em> spp.) locate, bury and preserve small vertebrate carcasses, and carry yeast symbionts with them while they do it. Sampling wild populations in the Adirondack Mountains, I examined how diverse these <em>Yarrowia</em>-like yeasts are across beetle species and what their evolutionary history says about how the association is maintained.
+</p>
+        </div>
+      
+        <div class="research-card">
+          <h3><em>Caulobacter</em> exopolysaccharide and phage defence</h3>
+          <p class="specimen-system"><em>Caulobacter crescentus</em> · bacteriophage</p>
+          <p><em>Caulobacter crescentus</em> secretes an extracellular polysaccharide layer that prevents bacteriophage from binding to the cell. Using confocal microscopy, fluorescent proteins and plaque assays, I measured that layer across diverse strains and how well each resisted infection. Strains investing more in exopolysaccharide grew more slowly, a trade-off between protection and proliferation.
+</p>
+        </div>
+      
+    </div>
+
+    <div class="section-head subhead print-hide">
+      <div>
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" width="22" height="22"><circle cx="12" cy="12" r="5.2"/><circle cx="12" cy="3.6" r="1.1" fill="currentColor" stroke="none"/><circle cx="19.8" cy="8" r="1.1" fill="currentColor" stroke="none"/><circle cx="19.8" cy="16" r="1.1" fill="currentColor" stroke="none"/><circle cx="4.2" cy="16" r="1.1" fill="currentColor" stroke="none"/><circle cx="4.2" cy="8" r="1.1" fill="currentColor" stroke="none"/><line x1="12" y1="6.8" x2="12" y2="5"/><line x1="16.7" y1="9.3" x2="18.3" y2="8.4"/><line x1="16.7" y1="14.7" x2="18.3" y2="15.6"/><line x1="7.3" y1="14.7" x2="5.7" y2="15.6"/><line x1="7.3" y1="9.3" x2="5.7" y2="8.4"/></svg></span>
+        <h2>Study systems</h2>
+      </div>
+    </div>
+    
+
+<figure class="cladogram-figure">
+  <div class="cladogram-scroll">
+    <div class="cladogram">
+      <div class="clado-tree">
+        <svg viewBox="0 0 560 500" preserveAspectRatio="none" fill="none" aria-hidden="true">
+          <g stroke="currentColor" stroke-width="2.4" vector-effect="non-scaling-stroke" stroke-linecap="square">
+            <!-- root -->
+            <path d="M8 287.5 H60"/>
+            <path d="M60 175 V400"/>
+            <!-- stem to the sampled eukaryotes, and to the bacteria -->
+            <path d="M60 175 H300"/>
+            <path d="M60 400 H300"/>
+            <!-- eukaryotes: Insecta sister to Fungi -->
+            <path d="M300 100 V250"/>
+            <path d="M300 250 H560"/>
+            <path d="M300 100 H440"/>
+            <!-- Insecta: Coleoptera sister to Hemiptera -->
+            <path d="M440 50 V150"/>
+            <path d="M440 50 H560"/>
+            <path d="M440 150 H560"/>
+            <!-- Bacteria: Gamma- sister to Alphaproteobacteria -->
+            <path d="M300 350 V450"/>
+            <path d="M300 350 H560"/>
+            <path d="M300 450 H560"/>
+          </g>
+        </svg>
+        <span class="clade" style="left:78.6%;top:20.0%;">Insecta</span>
+        <span class="clade" style="left:32.1%;top:35.0%;">Eukaryota</span>
+        <span class="clade" style="left:32.1%;top:80.0%;">Bacteria</span>
+      </div>
+
+      <ul class="clado-tips">
+        <li>
+          <span class="clado-specimen"><svg viewBox="0 0 122 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A burying beetle, Nicrophorus, with clubbed orange antennae, truncate elytra and two orange elytral bands">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9">
+    <!-- legs: fore, mid, hind (robust, fossorial) -->
+    <path d="M34 54 L15 47 L7 57M88 54 L107 47 L115 57"/>
+    <path d="M32 78 L11 82 L5 96M90 78 L111 82 L117 96"/>
+    <path d="M34 108 L13 120 L19 136M88 108 L109 120 L103 136"/>
+    <!-- antennae with lamellate clubs -->
+    <path d="M50 33 L31 27M72 33 L91 27"/>
+    <!-- mandibles -->
+    <path d="M55 26 l-4 -7 l6 4M67 26 l4 -7 l-6 4" stroke-width="1.4"/>
+    <!-- head, tucked under the pronotum -->
+    <path d="M49 34 C49 25 73 25 73 34 L71 45 C64 50 58 50 51 45 Z" fill="var(--card, #fff)"/>
+    <!-- pronotum: orbicular with flanged margins -->
+    <path d="M61 40 C44 40 30 48 30 60 C30 72 44 78 61 78 C78 78 92 72 92 60 C92 48 78 40 61 40 Z" fill="var(--card, #fff)"/>
+    <path d="M61 46 C50 46 38 51 38 60 C38 69 50 73 61 73 C72 73 84 69 84 60 C84 51 72 46 61 46 Z" stroke-width="1" opacity="0.5"/>
+    <!-- scutellum -->
+    <path d="M55 79 h12 l-6 9 Z" stroke-width="1.3"/>
+    <!-- elytra: truncate, exposing the abdominal tergites -->
+    <path d="M61 80 C42 80 29 88 29 100 L29 124 q0 5 5 5 h54 q5 0 5 -5 L93 100 C93 88 80 80 61 80 Z" fill="var(--card, #fff)"/>
+    <path d="M61 80 L61 129" stroke-width="1.4"/>
+    <!-- exposed abdomen -->
+    <path d="M36 129 L36 143 q0 12 25 12 q25 0 25 -12 L86 129" fill="var(--card, #fff)"/>
+    <path d="M38 139 h46M40 148 h42" stroke-width="1" opacity="0.55"/>
+  </g>
+  <!-- diagnostic orange antennal clubs -->
+  <ellipse cx="25" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(-16 25 26)"/>
+  <ellipse cx="97" cy="26" rx="7" ry="5" fill="var(--accent, #d98a3d)" transform="rotate(16 97 26)"/>
+  <!-- two orange-red transverse elytral bands, interrupted at the suture -->
+  <g fill="var(--accent, #d98a3d)">
+    <path d="M31 90 q12 -5 28 1 v11 q-16 -5 -28 0 Z"/>
+    <path d="M91 90 q-12 -5 -28 1 v11 q16 -5 28 0 Z"/>
+    <path d="M29 112 q14 -5 30 1 v10 q-16 -5 -30 0 Z"/>
+    <path d="M93 112 q-14 -5 -30 1 v10 q16 -5 30 0 Z"/>
+  </g>
+</svg></span>
+          <span class="clado-label">
+            <em>Nicrophorus</em> spp.
+            <small>Coleoptera · burying beetles and their yeast symbionts</small>
+          </span>
+        </li>
+        <li>
+          <span class="clado-specimen"><svg viewBox="0 0 188 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A pea aphid feeding on a leaf, showing long antennae, paired cornicles and a stylet inserted into the leaf">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <!-- leaf surface (the phyllosphere) -->
+    <path d="M10 112 Q80 106 180 111" stroke-width="1.6" opacity="0.55"/>
+    <!-- antennae, long and segmented, held forward and up -->
+    <path d="M40 60 C30 44 26 28 32 13" stroke-width="1.6"/>
+    <path d="M43 57 C37 40 41 24 51 12" stroke-width="1.6" opacity="0.78"/>
+    <path d="M30.5 46 l-4.5 -1.5M27.5 32 l-4.5 -1M31 20 l-4.5 -1" stroke-width="1" opacity="0.65"/>
+    <!-- legs -->
+    <path d="M56 86 L50 100 L61 110" stroke-width="1.6"/>
+    <path d="M80 94 L78 106 L93 111" stroke-width="1.6"/>
+    <path d="M104 96 L125 106 L113 113" stroke-width="1.6"/>
+    <!-- stylet inserted into the leaf (phloem feeding) -->
+    <path d="M37 76 L44 94 L48 111" stroke-width="1.5"/>
+    <!-- far cornicle -->
+    <path d="M110 64 L120 56 L138 41 L132 35 Z" fill="var(--card, #fff)" stroke-width="1.6" opacity="0.6"/>
+    <!-- body -->
+    <path d="M34 70 C36 60 46 54 58 54 C86 50 122 56 136 74 C146 88 134 100 112 99 C84 98 54 90 42 80 C34 74 32 73 34 70 Z"
+          fill="var(--card, #fff)" stroke-width="2"/>
+    <path d="M60 55 q5 14 -1 30" stroke-width="1" opacity="0.42"/>
+    <!-- near cornicle (siphunculus) — diagnostic aphid feature -->
+    <path d="M119 69 L130 60 L150 43 L143 36 Z" fill="var(--card, #fff)" stroke-width="1.9"/>
+    <!-- cauda -->
+    <path d="M136 88 L152 92 L137 96 Z" fill="var(--card, #fff)" stroke-width="1.6"/>
+  </g>
+  <circle cx="44" cy="66" r="2.6" fill="currentColor"/>
+  <!-- cornicle aperture -->
+  <ellipse cx="146.2" cy="39.8" rx="3.6" ry="2.4" fill="var(--accent, #d98a3d)" transform="rotate(-44 146.2 39.8)"/>
+</svg></span>
+          <span class="clado-label">
+            Pea aphids
+            <small>Hemiptera · insect host responding to leaf-surface microbes</small>
+          </span>
+        </li>
+        <li>
+          <span class="clado-specimen"><svg viewBox="0 0 156 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yarrowia yeast: a budding ovoid cell and the pseudohyphal chain">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <!-- budding mother cell -->
+    <ellipse cx="38" cy="50" rx="24" ry="20" fill="var(--card, #fff)"/>
+    <ellipse cx="69" cy="32" rx="13" ry="11" fill="var(--card, #fff)" transform="rotate(-18 69 32)"/>
+    <circle cx="32" cy="48" r="6" stroke-width="1.1" opacity="0.55"/>
+    <!-- pseudohyphal chain: elongate cells joined at septa -->
+    <path d="M74 76 h22 a9 9 0 0 1 0 18 h-22 a9 9 0 0 1 0 -18 Z" fill="var(--card, #fff)"/>
+    <path d="M96 74 h22 a9 9 0 0 1 0 18 h-22 a9 9 0 0 1 0 -18 Z" fill="var(--card, #fff)"/>
+    <path d="M118 71 h22 a9 9 0 0 1 0 18 h-22 a9 9 0 0 1 0 -18 Z" fill="var(--card, #fff)"/>
+    <path d="M96 78 v14M118 76 v14" stroke-width="1.2" opacity="0.6"/>
+  </g>
+  <!-- bud neck -->
+  <circle cx="61" cy="39" r="2.4" fill="var(--accent, #d98a3d)"/>
+</svg></span>
+          <span class="clado-label">
+            <em>Yarrowia</em>-like yeasts
+            <small>Ascomycota · symbionts carried by burying beetles</small>
+          </span>
+        </li>
+        <li>
+          <span class="clado-specimen"><svg viewBox="0 0 176 92" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pseudomonas, a rod-shaped bacterium with polar flagella and a fluorescent siderophore halo">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <!-- pyoverdine fluorescence halo -->
+    <rect x="31" y="23" width="104" height="46" rx="23" stroke="var(--accent, #d98a3d)" stroke-width="1.2" stroke-dasharray="1.6 4.5" opacity="0.85"/>
+    <!-- polar flagella (lophotrichous) -->
+    <path d="M126 46 Q134 40 140 46 Q146 52 152 46 Q158 40 165 45" stroke-width="1.5"/>
+    <path d="M124 52 Q133 50 138 57 Q143 64 150 62 Q157 60 163 65" stroke-width="1.5"/>
+    <path d="M124 40 Q133 36 137 29 Q141 22 149 23 Q157 24 161 18" stroke-width="1.5"/>
+    <!-- cell body -->
+    <rect x="42" y="34" width="82" height="24" rx="12" fill="var(--card, #fff)" stroke-width="2"/>
+    <!-- nucleoid hint -->
+    <path d="M60 46 q8 -6 16 0 q8 6 16 0" stroke-width="1.1" opacity="0.5"/>
+  </g>
+</svg></span>
+          <span class="clado-label">
+            <em>Pseudomonas</em> spp.
+            <small>Gammaproteobacteria · fluorescent phyllosphere bacteria</small>
+          </span>
+        </li>
+        <li>
+          <span class="clado-specimen"><svg viewBox="0 0 192 106" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Caulobacter crescentus, a crescent-shaped bacterium with a polar stalk and holdfast">
+  <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <!-- secreted exopolysaccharide layer -->
+    <path d="M48.3 71.5 Q85 39 121.7 71.5 A17 17 0 0 0 142.3 44.5 Q85 5 27.7 44.5 A17 17 0 0 0 48.3 71.5 Z"
+          stroke-width="1.1" stroke-dasharray="1.6 4.5" opacity="0.7"/>
+    <!-- flagellum at the pole opposite the stalk -->
+    <path d="M38 58 Q32.0 57.5 30.9 63.5 Q29.7 69.4 23.7 68.9 Q17.7 68.5 16.6 74.4 Q15.4 80.4 9.4 79.9" stroke-width="1.5"/>
+    <!-- polar pili -->
+    <path d="M36.5 52 L25 45M35 56.5 L22 54M38.5 48 L31.5 38M41.5 45 L38 34" stroke-width="1.1" opacity="0.8"/>
+    <!-- cell body: vibrioid, rounded poles -->
+    <path d="M43.2 64.7 Q85 30 127.1 64.4 A8 8 0 0 0 136.9 51.6 Q85 14 32.8 51.3 A8 8 0 0 0 43.2 64.7 Z"
+          fill="var(--card, #fff)" stroke-width="2"/>
+    <!-- polar stalk with crossbands -->
+    <path d="M132 58 L167 84.8" stroke-width="3"/>
+    <path d="M140.5 63.5 l4.4 -5.8M149 70 l4.4 -5.8M157.5 76.5 l4.4 -5.8" stroke-width="1.1" opacity="0.9"/>
+  </g>
+  <!-- holdfast -->
+  <ellipse cx="169.6" cy="86.5" rx="6" ry="4.2" fill="var(--accent, #d98a3d)" transform="rotate(37 169.6 86.5)"/>
+</svg></span>
+          <span class="clado-label">
+            <em>Caulobacter crescentus</em>
+            <small>Alphaproteobacteria · exopolysaccharide trade-offs and phage defence</small>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <figcaption>
+    The organisms I work with, and how they are actually related. Topology only:
+    branch lengths carry no information, and only taxa from my own research are sampled.
+  </figcaption>
+</figure>
+
+  </div>
+</section>
+
+<section id="teaching">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M12 6.5c-1.8-1.4-4.3-2-7-2v13c2.7 0 5.2.6 7 2 1.8-1.4 4.3-2 7-2v-13c-2.7 0-5.2.6-7 2Z"/><path d="M12 6.5V19.5"/></svg></span>
+        <h2>Teaching</h2>
+      </div>
+    </div>
+    <ul class="entry-list">
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>BIO306: Principles of Microbiology</h3>
+            <span class="entry-meta">2025</span>
+          </div>
+          <div class="entry-role">Instructor &#183; Morehouse College</div>
+          <p style="margin:0;">Co-taught this established upper-level course and redesigned parts of it to bring in more active learning and student-centred work, including spreading assessment across more and smaller assignments to make the course more accessible. Wrote, marked and built rubrics for seven assignments, a group project and four unit exams. Taught the unit on microbial interactions and applied microbiology on my own, co-taught the unit on microbial history and cell structure, and held weekly in-person and online office hours.
+</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>BIOMI 6300: Computational Approaches for Microbial Systems</h3>
+            <span class="entry-meta">2023</span>
+          </div>
+          <div class="entry-role">Guest Instructor &#183; Cornell University</div>
+          <p style="margin:0;">Designed learning outcomes and built a case study from my own research to teach upper-level bioinformatic analysis of next-generation sequencing data, using active learning (think-pair-share, live polling) to explore trade-offs between genomic and metagenomic, shallow and deep sequencing.
+</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>Software Carpentry Workshop</h3>
+            <span class="entry-meta">2023</span>
+          </div>
+          <div class="entry-role">Workshop Helper &#183; Cornell University</div>
+          <p style="margin:0;">Gave one-on-one support across a three-day workshop, helping attendees install and use R, RStudio, and GitHub, and troubleshooting issues across Mac, Windows, and Linux.
+</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>BioG 1500: Investigative Biology</h3>
+            <span class="entry-meta">2022–2023</span>
+          </div>
+          <div class="entry-role">Guest Lecturer &amp; Graduate Teaching Assistant &#183; Cornell University</div>
+          <p style="margin:0;">Lectured the full 300-student course on the scientific method and hypothesis building, and taught two 3-hour, 18-student lab sections a week. Guided small groups from writing a research proposal on green algae and nutrient limitation through to experimental design, data analysis in R and Excel, figures, and a written scientific article, and supervised the undergraduate teaching assistants supporting the sections.
+</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>BIOMI 2600: Microbiology of Human Contagious Diseases</h3>
+            <span class="entry-meta">2021</span>
+          </div>
+          <div class="entry-role">Graduate Teaching Assistant &#183; Cornell University</div>
+          <p style="margin:0;">Facilitated remote discussions on infectious disease and microbiology, held office hours and small-group review sessions, wrote exam questions, and moved lecture and assessment materials onto Canvas, using its analytics to find where students were struggling.
+</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>BIOMI 1100: College Dorm Microbiology</h3>
+            <span class="entry-meta">2019–2020</span>
+          </div>
+          <div class="entry-role">Graduate Teaching Assistant &#183; Cornell University</div>
+          <p style="margin:0;">Led three weekly 2-hour discussion sections connecting microbiology to everyday life, and guided students through independent projects: writing a proposal, sampling and culturing a microbial community of their own choosing, then analysing the resulting 16S data and writing it up as a scientific article.
+</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>Microbial Friends and Foes Summer REU</h3>
+            <span class="entry-meta">2019–2021</span>
+          </div>
+          <div class="entry-role">Guest Lecturer &amp; Graduate Teaching Assistant &#183; Cornell University</div>
+          <p style="margin:0;">Designed and taught a recurring workshop on how to read scientific articles for undergraduates from underrepresented backgrounds, and served as a teaching assistant and student liaison for the broader summer research program.
+</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>BIOMI 2500: Public Health Microbiology</h3>
+            <span class="entry-meta">2018–2019</span>
+          </div>
+          <div class="entry-role">Graduate Teaching Assistant &#183; Cornell University</div>
+          <p style="margin:0;">Taught in a flipped classroom where students met concepts through coursework and worked problems in class, guiding small groups through public health case studies and encouraging them to reason through unfamiliar material independently.
+</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>BIO250: Microbiology (Lab)</h3>
+            <span class="entry-meta">2015–2016</span>
+          </div>
+          <div class="entry-role">Teaching Assistant &#183; Willamette University</div>
+          <p style="margin:0;">Supported students in designing and running independent microbiology experiments, set up the laboratory space each week, and prepared all media and reagents.
+</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>BIO130: Cell Biology &amp; Genetics</h3>
+            <span class="entry-meta">2015</span>
+          </div>
+          <div class="entry-role">Teaching Assistant &#183; Willamette University</div>
+          <p style="margin:0;">Held office hours and exam review sessions, and graded coursework throughout the term.
+</p>
+        </li>
+      
+    </ul>
+
+    <div class="section-head subhead">
+      <div>
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M12 4 2.5 8.6 12 13.2l9.5-4.6L12 4Z"/><path d="M6.4 10.6v4.8c0 1.6 2.5 2.9 5.6 2.9s5.6-1.3 5.6-2.9v-4.8"/><path d="M21.5 8.6v5.2"/></svg></span>
+        <h2>Teaching training</h2>
+      </div>
+    </div>
+    <ul class="entry-list compact">
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>Project Management for Postdoctoral Researchers</h3>
+            <span class="entry-meta">2025</span>
+          </div>
+          <div class="entry-role">Emory University &#183; Project management · mentoring</div>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>FIRST “How To Teach”</h3>
+            <span class="entry-meta">2025</span>
+          </div>
+          <div class="entry-role">Emory University &#183; Teaching · pedagogy</div>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>BIOG 6500: Biology Instructor Training</h3>
+            <span class="entry-meta">2022–2023</span>
+          </div>
+          <div class="entry-role">Cornell University &#183; Teaching · pedagogy</div>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>Teaching & Learning in the Diverse Classroom</h3>
+            <span class="entry-meta">2022</span>
+          </div>
+          <div class="entry-role">Cornell University &#183; Teaching · inclusive practice</div>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>ENTOM 4040: Diversity, Equity & Inclusion</h3>
+            <span class="entry-meta">2020</span>
+          </div>
+          <div class="entry-role">Cornell University &#183; Teaching · inclusive practice</div>
+        </li>
+      
+    </ul>
+
+    <div class="section-head subhead">
+      <div>
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"/><circle cx="17.5" cy="9" r="2.4"/><path d="M15.8 14.2c2.6.4 4.2 2.6 4.2 5.8"/></svg></span>
+        <h2>Mentoring</h2>
+      </div>
+    </div>
+    <p class="lede">
+      I have advised and supported seven undergraduate researchers through independent
+      projects: three over six years in the Hendry Lab at Cornell, three summer researchers
+      on the Microbial Friends and Foes REU, and an honours research student during my
+      postdoc at Emory. Mentoring is one of the most rewarding parts of the job, and it
+      shapes how I teach.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="icon-badge"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" width="20" height="20"><line x1="4" y1="19" x2="4" y2="9"/><line x1="9.3" y1="19" x2="9.3" y2="5"/><line x1="14.7" y1="19" x2="14.7" y2="11"/><line x1="20" y1="19" x2="20" y2="7"/></svg></span>
+        <h2>Skills &amp; Tools</h2>
+      </div>
+    </div>
+    <div class="research-grid cols-3">
+      <div class="research-card">
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M12 6.5c-1.8-1.4-4.3-2-7-2v13c2.7 0 5.2.6 7 2 1.8-1.4 4.3-2 7-2v-13c-2.7 0-5.2.6-7 2Z"/><path d="M12 6.5V19.5"/></svg></span>
+        <h3>Teaching &amp; Curriculum</h3>
+        <p>
+          <span class="badge">Course design &amp; redesign</span>
+          <span class="badge">Lecturing (300+ students)</span>
+          <span class="badge">Laboratory teaching</span>
+          <span class="badge">Learning outcomes</span>
+          <span class="badge">Assessment &amp; rubric design</span>
+          <span class="badge">Marking &amp; feedback</span>
+          <span class="badge">Active learning</span>
+          <span class="badge">Flipped classroom</span>
+          <span class="badge">Inclusive teaching practice</span>
+          <span class="badge">Project supervision</span>
+          <span class="badge">Moodle-like systems</span>
+          <span class="badge">Online teaching &amp; delivery</span>
+          <span class="badge">Workshop delivery</span>
+        </p>
+      </div>
+      <div class="research-card">
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" width="22" height="22"><path d="M7 3c0 6 10 12 10 18M17 3C17 9 7 15 7 21"/><path d="M8.2 6.5h7.6M8.2 17.5h7.6M6.6 10.2h10.8M6.6 13.8h10.8"/></svg></span>
+        <h3>Bioinformatics &amp; Computation</h3>
+        <p>
+          <span class="badge">Bash</span>
+          <span class="badge">Python</span>
+          <span class="badge">R / R Markdown</span>
+          <span class="badge">Git / GitHub</span>
+          <span class="badge">Docker / Singularity</span>
+          <span class="badge">Jupyter / Binder</span>
+          <span class="badge">SPAdes / Discovar</span>
+          <span class="badge">BWA / Bowtie2 / SAMtools</span>
+          <span class="badge">FastQC / CheckM / BUSCO</span>
+          <span class="badge">BLAST / RAST / Braker2</span>
+          <span class="badge">MEGA / MetaPhlAn / PhyloPhlAn</span>
+        </p>
+      </div>
+      <div class="research-card">
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M10 3h4M9.5 3v6.2L5 18.5A1.8 1.8 0 0 0 6.6 21h10.8a1.8 1.8 0 0 0 1.6-2.5L14.5 9.2V3"/><path d="M7.5 15.5h9"/></svg></span>
+        <h3>Laboratory &amp; Field</h3>
+        <p>
+          <span class="badge">Sterile technique &amp; culturing</span>
+          <span class="badge">Confocal microscopy</span>
+          <span class="badge">Fluorescent proteins</span>
+          <span class="badge">Plaque &amp; phage assays</span>
+          <span class="badge">Plate reader assays</span>
+          <span class="badge">ImageJ</span>
+          <span class="badge">DNA synthesis &amp; Sanger sequencing</span>
+          <span class="badge">Insect behavioural assays</span>
+          <span class="badge">Field sampling &amp; transects</span>
+          <span class="badge">Media &amp; reagent preparation</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M10 3h4M9.5 3v6.2L5 18.5A1.8 1.8 0 0 0 6.6 21h10.8a1.8 1.8 0 0 0 1.6-2.5L14.5 9.2V3"/><path d="M7.5 15.5h9"/></svg></span>
+        <h2>Publications</h2>
+      </div>
+      <a class="btn" href="https://orcid.org/0000-0001-9647-5104" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9.2"/><circle cx="8.9" cy="8" r=".9" fill="currentColor" stroke="none"/><line x1="8.9" y1="10.6" x2="8.9" y2="16.4" stroke-linecap="round"/><path d="M11.8 10.6h1.9c2 0 3.2 1.3 3.2 2.9s-1.2 2.9-3.2 2.9h-1.9v-5.8Z" stroke-linejoin="round"/></svg> View on ORCID</a>
+    </div>
+
+    <ol class="bibliography"><li>
+<div id="doi:10.1101/2024.04.26.591271" class="bib-entry">
+  
+    <div class="title">Common fluorescent <i>Pseudomonas</i> in the phyllosphere can influence aphid behavior in diverse ways</div>
+
+    <div class="author">
+      <strong>Herr, K.</strong>, Schieber, J., &amp; Hendry, T. A.
+      (2024)
+    </div>
+
+    <div class="periodical">
+      <em>bioRxiv</em></div>
+  
+
+  <div class="links">
+    
+      <a href="https://doi.org/10.1101/2024.04.26.591271" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M9 6H5.5A1.5 1.5 0 0 0 4 7.5v11A1.5 1.5 0 0 0 5.5 20h11a1.5 1.5 0 0 0 1.5-1.5V15"/><path d="M14 4h6v6M20 4 11 13"/></svg>
+        doi:10.1101/2024.04.26.591271
+      </a>
+    
+    
+  </div>
 </div>
+</li>
+<li>
+<div id="doi:10.1128/mra.00813-23" class="bib-entry">
+  
+    <div class="title">Draft genome sequences of eight bacterial isolates from <i>Pisum sativum</i> leaf surfaces</div>
 
-<!-- style="font-family:Poppins;background-color:#19BBAA; -->
+    <div class="author">
+      Smee, M. R., <strong>Herr, K. L.</strong>, Abdul-Khaliq, S., Cadet, C. E. A., &amp; Hendry, T. A.
+      (2024)
+    </div>
 
-<!-- HOME HIGHLIGHTS SECTION --> 
+    <div class="periodical">
+      <em>Microbiology Resource Announcements</em>, <em class="vol">13</em>(1), e00813-23</div>
+  
 
-<div class="card mx-auto animate__animated animate__slideInUp animate__delay-1s glowing-border" style="max-width: 100%;">
+  <div class="links">
+    
+      <a href="https://doi.org/10.1128/mra.00813-23" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M9 6H5.5A1.5 1.5 0 0 0 4 7.5v11A1.5 1.5 0 0 0 5.5 20h11a1.5 1.5 0 0 0 1.5-1.5V15"/><path d="M14 4h6v6M20 4 11 13"/></svg>
+        doi:10.1128/mra.00813-23
+      </a>
+    
+    
+  </div>
+</div>
+</li>
+<li>
+<div id="doi:10.1128/AEM.01181-20" class="bib-entry">
+  
+    <div class="title">The Lizard Gut Microbiome Changes with Temperature and Is Associated with Heat Tolerance</div>
 
-  <div class="card-header" style="background-color:#19BBAA;">
-    <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
+    <div class="author">
+      Moeller, A. H., Ivey, K., Cornwall, M. B., <strong>Herr, K.</strong>, Rede, J., Taylor, E. N., &amp; Gunderson, A. R.
+      (2020)
+    </div>
+
+    <div class="periodical">
+      <em>Applied and Environmental Microbiology</em>, <em class="vol">86</em>(17), e01181-20</div>
+  
+
+  <div class="links">
+    
+      <a href="https://doi.org/10.1128/AEM.01181-20" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M9 6H5.5A1.5 1.5 0 0 0 4 7.5v11A1.5 1.5 0 0 0 5.5 20h11a1.5 1.5 0 0 0 1.5-1.5V15"/><path d="M14 4h6v6M20 4 11 13"/></svg>
+        doi:10.1128/AEM.01181-20
+      </a>
+    
+    
+  </div>
+</div>
+</li>
+<li>
+<div id="10.1371/journal.pone.0190371" class="bib-entry">
+  
+    <div class="title">Exopolysaccharide production in <i>Caulobacter crescentus</i>: A resource allocation trade-off between protection and proliferation</div>
+
+    <div class="author">
+      <strong>Herr, K. L.</strong>, Carey, A. M., Heckman, T. I., Chávez, J. L., Johnson, C. N., Harvey, E., Gamroth, W. A., Wulfing, B. S., Van Kessel, R. A., &amp; Marks, M. E.
+      (2018)
+    </div>
+
+    <div class="periodical">
+      <em>PLOS ONE</em>, <em class="vol">13</em>(1), e0190371</div>
+  
+
+  <div class="links">
+    
+      <a href="https://doi.org/10.1371/journal.pone.0190371" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M9 6H5.5A1.5 1.5 0 0 0 4 7.5v11A1.5 1.5 0 0 0 5.5 20h11a1.5 1.5 0 0 0 1.5-1.5V15"/><path d="M14 4h6v6M20 4 11 13"/></svg>
+        doi:10.1371/journal.pone.0190371
+      </a>
+    
+    
+  </div>
+</div>
+</li></ol>
+  </div>
+</section>
+
+<section id="funding">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><circle cx="12" cy="8.5" r="5"/><path d="m8.5 12.8-1.8 7.7L12 18l5.3 2.5-1.8-7.7"/></svg></span>
+        <h2>Funding &amp; Awards</h2>
+      </div>
+    </div>
+    <ul class="entry-list">
       
-        
-          <li class="nav-item">
-            <a class="nav-link shadow-none" id="" href="#publications" role="tab" aria-controls="publications" aria-selected="true" style="font-family:Poppins;color:#010101;"> Publications</a>
-          </li>
-        
+        <li class="entry">
+          <div class="entry-head">
+            <h3>NIH IRACDA FIRST Postdoctoral Fellowship</h3>
+            <span class="entry-meta">2024</span>
+          </div>
+          <div class="entry-role">Emory University</div>
+          <p style="margin:0;">NIH Institutional Research and Academic Career Development Award (IRACDA), Fellowships in Research and Science Teaching.
+</p>
+        </li>
       
-        
-          <li class="nav-item">
-              <a class="nav-link" id="" href="#teaching" role="tab" aria-controls="teaching" aria-selected="true" style="font-family:Poppins;color:#010101;"> Teaching</a>
-          </li>
-        
+        <li class="entry">
+          <div class="entry-head">
+            <h3>Provost Diversity Fellowship for Advanced Doctoral Students</h3>
+            <span class="entry-meta">2023</span>
+          </div>
+          <div class="entry-role">Cornell University &#183; $16,247</div>
+          <p style="margin:0;">A competitive one-term fellowship, covering stipend and tuition, for advanced Ph.D. students who have contributed to Cornell's work on inclusion and belonging.
+</p>
+        </li>
       
-        
-          <li class="nav-item">
-              <a class="nav-link" id="" href="#courses" role="tab" aria-controls="courses" aria-selected="true" style="font-family:Poppins;color:#010101;"> Non-Academic Work</a>
-          </li>
-        
+        <li class="entry">
+          <div class="entry-head">
+            <h3>Graduate Student Research Enhancement Award</h3>
+            <span class="entry-meta">2021</span>
+          </div>
+          <div class="entry-role">The Coleopterists Society &#183; $1,991</div>
+          <p style="margin:0;">Examining the diversity of burying beetles (<em>Nicrophorus</em> spp.) and their associated <em>Yarrowia</em> symbionts in the Adirondack Mountains.
+</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>Kieckhefer Adirondack Fellowship</h3>
+            <span class="entry-meta">2020</span>
+          </div>
+          <div class="entry-role">Cornell University &#183; $979</div>
+          <p style="margin:0;">Fieldwork on burying beetles (<em>Nicrophorus</em> spp.) and their associated <em>Yarrowia</em> symbionts in the Adirondack Mountains.
+</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>CALS Outstanding Teaching Assistant Award</h3>
+            <span class="entry-meta">2020</span>
+          </div>
+          <div class="entry-role">Cornell University</div>
+          <p style="margin:0;">Awarded for teaching BIOMI 1100: College Dorm Microbiology and BIOMI 2500: Public Health Microbiology.
+</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>Microbiome Hackathon: Best Presentation</h3>
+            <span class="entry-meta">2020</span>
+          </div>
+          <div class="entry-role">Cornell University</div>
+          
+        </li>
       
     </ul>
   </div>
-  <div class="card-body">          
-      <div class="tab-content mt-3">
-        
-          
-            
-            <div class="tab-pane active overflow-auto" id="publications" role="tabpanel" aria-labelledby="publications-tab">  
-              <p><i>A list of my publications.</i></p>
-                  
-                  <div class="list-group">
-                    <div class="list-group-item list-group-item-action">
-                      <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Theme</h5>
-                        <h6>KT</h4>
-                        <small>dunno</small>
-                      </div>
-                      <p class="mb-1">publications.html</p>
-                      <small></small>
-                    </div>
-                  </div>
-                  
-            </div>
-            
-          
-        
-            
-            
-              <div class="tab-pane overflow-auto" id="teaching" role="tabpanel" aria-labelledby="teaching-tab">  
-                <p><i>My teaching portfolio.</i></p>
-                    
-                    <div class="list-group">
-                      <div class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Cornell</h5>
-                          <h4>Computational Approaches for Microbial Systems BIOMI 6300</h4>
-                          <small>2023</small>
-                        </div>
-                        <p class="mb-1"><ul> <li>Designed learning outcomes and developed a case study from my own research to teach upper- level approaches to bioinformatic analysis and interpretation of next generation sequencing data.</li> <li>Utilized active learning strategies (think-pair-share, popcorn, PollEverywhere survey) to engage
-  students, promote in-class discussion, and assess student take-aways.</li>
-<li>Learning outcomes:
-  <ul>
-  <li> Learn how both genomic and metagenomic sequencing can be harnessed to explore hypotheses</li>
-  <li>Explore trade-offs from different types of sequencing (genomic vs. metagenomic) and different
-  levels of sequencing (shallow vs. deep)</li>
-  </ul></li>
-</ul>
-</p>
-                        <small></small>
-                      </div>
-                    </div>
-                    
-                    <div class="list-group">
-                      <div class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Cornell</h5>
-                          <h4>BioG 1500 - Investigative Biology</h4>
-                          <small>Fall 2022, Spring & Fall 2023</small>
-                        </div>
-                        <p class="mb-1"></p>
-                        <small></small>
-                      </div>
-                    </div>
-                    
-                    <div class="list-group">
-                      <div class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Cornell</h5>
-                          <h4>BioMI 2600 - Microbiology of Human Contagious Diseases</h4>
-                          <small>Fall 2021</small>
-                        </div>
-                        <p class="mb-1"></p>
-                        <small></small>
-                      </div>
-                    </div>
-                    
-                    <div class="list-group">
-                      <div class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Cornell</h5>
-                          <h4>BioMI 1100 - College Dorm Microbiology</h4>
-                          <small>Spring 2019, 2020</small>
-                        </div>
-                        <p class="mb-1"></p>
-                        <small></small>
-                      </div>
-                    </div>
-                    
-                    <div class="list-group">
-                      <div class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Cornell</h5>
-                          <h4>Microbial Friends and Foes Summer REU</h4>
-                          <small>Summer 2019</small>
-                        </div>
-                        <p class="mb-1"></p>
-                        <small></small>
-                      </div>
-                    </div>
-                    
-                    <div class="list-group">
-                      <div class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Cornell</h5>
-                          <h4>BioMI 2500 - Public Health Microbiology</h4>
-                          <small>Fall 2018</small>
-                        </div>
-                        <p class="mb-1"></p>
-                        <small></small>
-                      </div>
-                    </div>
-                    
-              </div>
-              
-          
-        
-            
-            
-              <div class="tab-pane overflow-auto" id="courses" role="tabpanel" aria-labelledby="courses-tab">  
-                <p><i>Other work</i></p>
-                    
-                    <div class="list-group">
-                      <div class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Blue Heron Biotechnology</h5>
-                          <p>Production Associate I</p>
-                          <small>Jun 2017 - Jun 2018</small>
-                        </div>
-                        <p class="mb-1"></p>
-                      </div>
-                    </div>
-                    
-                    <div class="list-group">
-                      <div class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Willamette University</h5>
-                          <p>Field Technician</p>
-                          <small>Mar 2017 - Apr 2017</small>
-                        </div>
-                        <p class="mb-1">Participated in field research studying pollination biology of Joshua trees (<i>Yucca brevifolia</i>) and coevolution with yucca moths (genus <i>Tegeticula</i>) in Delamar Valley, Lincoln County NV.
- Installed pollinator exclusion cages, collected flower and leaf samples, and captured yucca moths for study.
- Endured challenging field conditions such as extreme weather events and limited water supply. 
- Worked and camped in close proximity with a team of four other researchers.
- Traveled several miles each day carrying water and heavy equipment.</p>
-                      </div>
-                    </div>
-                    
-              </div>
-            
-          
-        
+</section>
+
+<section id="talks">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="3" y="4" width="18" height="11.5" rx="1.8"/><path d="M12 15.5V19M8.5 21l3.5-2 3.5 2"/><path d="M7 11.6l2.6-3 2.4 2.2 2.3-3.4L17 11.6"/></svg></span>
+        <h2>Talks &amp; Posters</h2>
       </div>
+    </div>
+    <ul class="entry-list">
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>The Symphony of Symbiosis: Ecological and Evolutionary Impacts of Microbial Interactions with Insects</h3>
+            <span class="entry-meta">2024</span>
+          </div>
+          <div class="entry-role">Conference Talk</div>
+          <p style="margin:0;">CIHMID Summer Symposium, Cornell University</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>The Symphony of Symbiosis: Ecological and Evolutionary Impacts of Microbial Interactions with Insects</h3>
+            <span class="entry-meta">2024</span>
+          </div>
+          <div class="entry-role">Invited Talk</div>
+          <p style="margin:0;">Dissertation Seminar, Cornell University</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>An Investigation into <em>Yarrowia</em>-like Yeast Symbionts of Burying Beetles (<em>Nicrophorus</em> spp.)</h3>
+            <span class="entry-meta">2023</span>
+          </div>
+          <div class="entry-role">Invited Talk</div>
+          <p style="margin:0;">Microbiology Department Seminar, Cornell University</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>Investigating the Relationship Between Burying Beetles (<em>Nicrophorus</em> spp.) and Associated Microbial Symbionts</h3>
+            <span class="entry-meta">2023</span>
+          </div>
+          <div class="entry-role">Poster</div>
+          <p style="margin:0;">Animal-Microbe Symbioses, Gordon Research Conference, Lucca, Italy</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>Evolution of Yeast Symbionts from Burying Beetles (<em>Nicrophorus</em> spp.)</h3>
+            <span class="entry-meta">2023</span>
+          </div>
+          <div class="entry-role">Poster</div>
+          <p style="margin:0;">Animal-Microbe Symbioses, Gordon Research Seminar, Lucca, Italy</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>An Investigation into Burying Beetle (<em>Nicrophorus</em> spp.) Symbionts</h3>
+            <span class="entry-meta">2022</span>
+          </div>
+          <div class="entry-role">Conference Talk</div>
+          <p style="margin:0;">Evolution Meeting, Cleveland, OH</p>
+        </li>
+      
+    </ul>
   </div>
-</div>
+</section>
 
+<section id="outreach">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4"/><path d="M12 2.8c2.4 2.5 3.7 5.8 3.7 9.2S14.4 18.7 12 21.2C9.6 18.7 8.3 15.4 8.3 12S9.6 5.3 12 2.8Z"/></svg></span>
+        <h2>Outreach</h2>
+      </div>
+    </div>
+    <ul class="entry-list">
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>Write a Researcher (WAR)</h3>
+            <span class="entry-meta">2021–2023</span>
+          </div>
+          <div class="entry-role">Vice President</div>
+          <p style="margin:0;">A pen-pal program connecting high school students across the country with research mentors at Cornell University. I helped build and run the program from its first year, when it reached 200 high-school participants nationwide, and worked with Cornell to waive the graduate-school application fee for our participants.
+</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>GRASSHOPR</h3>
+            <span class="entry-meta">2019–2023</span>
+          </div>
+          <div class="entry-role">Teaching Fellow</div>
+          <p style="margin:0;">The Graduate Student School Outreach Program connects STEM researchers with K-12 students in underrepresented districts of Tompkins County, NY. I co-developed and taught multi-day lesson plans for elementary classrooms on decomposition, immunity, and the history of microbiology, spotlighting diverse and underrepresented microbiologists.
+</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>Expanding Your Horizons (EYH)</h3>
+            <span class="entry-meta">2019–2024</span>
+          </div>
+          <div class="entry-role">Buddy</div>
+          <p style="margin:0;">A yearly conference for hundreds of 7th–9th grade students from backgrounds underrepresented in STEM. I escorted student groups through a day of hands-on scientific learning.
+</p>
+        </li>
+      
+    </ul>
+  </div>
+</section>
 
+<section id="experience">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M20 4c-9 0-16 5-16 14 9 0 14-5 16-14Z"/><path d="M5.5 17.5 15 8"/></svg></span>
+        <h2>Other Notable Research &amp; Lab Experience</h2>
+      </div>
+    </div>
+    <ul class="entry-list">
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>Production Associate I</h3>
+            <span class="entry-meta">Jul 2017 &#8211; Jul 2018</span>
+          </div>
+          <div class="entry-role">Blue Heron Biotech, LLC &#183; Bothell, WA</div>
+          <p style="margin:0;">Performed DNA synthesis and sequence analysis within a multi-disciplinary team, meeting accuracy and throughput goals on the company's proprietary gene-synthesis platform. Ran Sanger sequencing and helped maintain the lab's pipetting robots.
+</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>Field Technician</h3>
+            <span class="entry-meta">Mar 2017 &#8211; Apr 2017</span>
+          </div>
+          <div class="entry-role">Willamette University, Dept. of Biology &#183; Delamar Valley, NV</div>
+          <p style="margin:0;">Studied the coevolution of Joshua trees (<i>Yucca brevifolia</i>) and yucca moths (genus <i>Tegeticula</i>) as part of a five-person field team under demanding desert conditions: surveying insect populations, running transects of Joshua tree seedlings, and collecting samples for lab analysis.
+</p>
+        </li>
+      
+        <li class="entry">
+          <div class="entry-head">
+            <h3>Laboratory Technician</h3>
+            <span class="entry-meta">Jun 2016 &#8211; Jan 2017</span>
+          </div>
+          <div class="entry-role">Willamette University, Dept. of Biology &#183; Salem, OR</div>
+          <p style="margin:0;">Researched evolutionary competition in <i>Caulobacter crescentus</i> using confocal microscopy, fluorescent proteins, and plaque assays to characterize extracellular polysaccharide layers across diverse strains. Supervised three junior research students and wrote up the work as a first-author publication.
+</p>
+        </li>
+      
+    </ul>
+  </div>
+</section>
 
-<!-- ANIMATE.JS ANIMATE LIBRARY
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
--->
-
-
-<!--JS FUNCTION FOR RECENT WORK SECTION -->
+</main>
+<a class="to-top" href="#main" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</a>
 <script>
-    $('#test-list a').on('click', function (e) {
-    e.preventDefault()
-    $(this).tab('show')
-    })
-</script> 
-
-<!-- OPTIONAL TOAST JS FUNCTION-->
-<script>
-    $(document).ready(function() {
-        $(".toast").toast("show");
-    });
+  (function () {
+    var btn = document.querySelector('.to-top');
+    if (!btn) return;
+    var show = function () { btn.classList.toggle('visible', window.scrollY > 700); };
+    show();
+    window.addEventListener('scroll', show, { passive: true });
+  })();
 </script>
-
-
 <script>
-$('body').scrollspy({ target: '#list-example' })
+  /* Assemble the email address in the browser. The served HTML holds only the
+     reversed local part and the reversed domain, in separate attributes, so it
+     never contains anything matching user@host for a harvester to lift. */
+  (function () {
+    var rev = function (s) { return s.split('').reverse().join(''); };
+    var at = String.fromCharCode(64);
+    var links = document.querySelectorAll('a.js-eml');
+    for (var i = 0; i < links.length; i++) {
+      var a = links[i];
+      var u = a.getAttribute('data-u');
+      var d = a.getAttribute('data-d');
+      if (!u || !d) continue;
+      var addr = rev(u) + at + rev(d);
+      a.setAttribute('href', 'mail' + 'to:' + addr);
+      a.removeAttribute('data-u');
+      a.removeAttribute('data-d');
+      a.removeAttribute('rel');
+      if (a.getAttribute('data-show')) {
+        var slot = a.querySelector('.eml-text');
+        if (slot) { slot.textContent = addr; }
+        a.removeAttribute('data-show');
+      }
+    }
+  })();
 </script>
+<footer class="site-footer">
+  <div class="container footer-row">
+    <div>
+      <strong style="color:#fff;">Kathryn Herr</strong>
+      <div class="footer-note">Researcher in insect–microbe symbiosis</div>
+      <div class="footer-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M12 21s7-6.4 7-12a7 7 0 1 0-14 0c0 5.6 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg> Bath, UK</div>
+    </div>
+    <div class="footer-social">
+      <a class="js-eml " href="#" data-u="nyrhtak" data-d="moc.ygoloib-nyrhtak"
+   
+   title="Email" aria-label="Email Kathryn Herr" rel="nofollow"
+   ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="m4 6.5 8 6.2 8-6.2"/></svg></a>
 
-<script>
-$('.collapse').collapse()
-</script>
 
-<script>
-$('.show').show()
-</script>
+  <a href="https://www.linkedin.com/in/kathryn-herr-a516a4a7" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor"><rect x="2.5" y="2.5" width="19" height="19" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M7.8 10v7M7.8 7.3v.01M11.4 17v-4c0-1.5.9-2.6 2.3-2.6 1.4 0 2.1 1 2.1 2.6v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></a>
+
+
+  <a href="https://orcid.org/0000-0001-9647-5104" target="_blank" rel="noopener" aria-label="ORCID" title="ORCID"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9.2"/><circle cx="8.9" cy="8" r=".9" fill="currentColor" stroke="none"/><line x1="8.9" y1="10.6" x2="8.9" y2="16.4" stroke-linecap="round"/><path d="M11.8 10.6h1.9c2 0 3.2 1.3 3.2 2.9s-1.2 2.9-3.2 2.9h-1.9v-5.8Z" stroke-linejoin="round"/></svg></a>
+
 
     </div>
-    <div class="dumbarton-spacer"></div>
-    <div class="navbar navbar-default navbar-fixed-bottom">
-  <div class="container">
-    <p class="navbar-text pull-left">© 2020 - Theme Built By Tyler Butler, See it on
-        <a href="https://github.com/tcbutler320/Jekyll-Theme-Dumbarton" target="_blank" >GitHub</a>
-    </p>
-    <p class="navbar-text pull-right">
-            <!-- Displays Social Media Icons based on _config.yml settings -->
-
-<span style="color: Black;">
-     
-    
-    
-        <a href="https://www.linkedin.com/in/https://www.linkedin.com/in/kathryn-herr-a516a4a7/">
-        <span style="color: black;">
-            <i class="fab fa-linkedin fa-lg"></i></a>
-        </span>
-    
-    
-    
-    
-     
-    <i> &nbsp;&nbsp; </i>
-</span>
-
-    </p>
   </div>
-</div> 
+  <div class="container footer-meta">
+    <div class="footer-note">&copy; 2026 Kathryn Herr.</div>
+    
+      <a class="footer-note repo-link" href="https://github.com/KTHerr/KTHerr.github.io" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M12 1.8a10.2 10.2 0 0 0-3.23 19.88c.51.1.7-.22.7-.49v-1.9c-2.84.62-3.44-1.2-3.44-1.2-.47-1.18-1.14-1.5-1.14-1.5-.93-.63.07-.62.07-.62 1.03.07 1.57 1.06 1.57 1.06.91 1.57 2.4 1.12 2.99.85.09-.66.36-1.12.65-1.37-2.27-.26-4.65-1.14-4.65-5.05 0-1.12.4-2.03 1.05-2.74-.1-.26-.46-1.3.1-2.71 0 0 .86-.28 2.81 1.05a9.7 9.7 0 0 1 5.11 0c1.95-1.33 2.8-1.05 2.8-1.05.57 1.41.21 2.45.1 2.71.66.71 1.05 1.62 1.05 2.74 0 3.92-2.38 4.79-4.65 5.04.37.32.7.94.7 1.9v2.81c0 .27.18.6.7.49A10.2 10.2 0 0 0 12 1.8Z"/></svg> Source on GitHub
+      </a>
+    
+  </div>
+</footer>
 
-<script>
-  $(function () {
-    $('[data-toggle="popover"]').popover()
-  })
-</script>
-  </body>
+</body>
 </html>

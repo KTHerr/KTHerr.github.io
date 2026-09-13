@@ -1,0 +1,26 @@
+- name: Write a Researcher (WAR)
+  role: Vice President
+  date: 2021–2023
+  description: >
+    A pen-pal program connecting high school students across the country with research
+    mentors at Cornell University. I helped build and run the program from its first year,
+    when it reached 200 high-school participants nationwide, and worked with Cornell to
+    waive the graduate-school application fee for our participants.
+
+- name: GRASSHOPR
+  role: Teaching Fellow
+  date: 2019–2023
+  description: >
+    The Graduate Student School Outreach Program connects STEM researchers with K-12
+    students in underrepresented districts of Tompkins County, NY. I co-developed and
+    taught multi-day lesson plans for elementary classrooms on decomposition, immunity,
+    and the history of microbiology, spotlighting diverse and underrepresented
+    microbiologists.
+
+- name: Expanding Your Horizons (EYH)
+  role: Buddy
+  date: 2019–2024
+  description: >
+    A yearly conference for hundreds of 7th–9th grade students from backgrounds
+    underrepresented in STEM. I escorted student groups through a day of hands-on
+    scientific learning.

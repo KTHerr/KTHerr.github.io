@@ -1,20 +1,27 @@
 - School: Emory University
-  Degree: 
-  Program: Postdoctoral researcher and NIH IRACDA FIRST Fellow 
+  Program: IRACDA FIRST Postdoctoral Teaching Fellow, Dept. of Biology
+  Detail: >
+    NIH Institutional Research and Academic Career Development Award (IRACDA),
+    Fellowships in Research and Science Teaching. Independent research paired with
+    mentored teaching at a partner institution, Morehouse College.
   Start Date: 2024
-  End Date: 
+  End Date: 2025
   Icon: /assets/images/emory.svg
-  
+
 - School: Cornell University
-  Degree: 
-  Program: Ph.D. Microbiology
+  Program: Ph.D., Microbiology
+  Detail: >
+    Dissertation: <i>The symphony of symbiosis: ecological and evolutionary impacts of
+    microbial interactions with insects.</i>
   Start Date: 2018
   End Date: 2024
-  Icon: /assets/images/cornell.png      # Make this icon small, think 30px/30px
+  Icon: /assets/images/cornell.png
 
 - School: Willamette University
-  Degree: 
-  Program: Bachelor's in Biology/Bilogical Sciences
-  start Date: 2016
-  End Date: 2012
+  Program: B.A., Biology (minors in Chemistry &amp; Chinese)
+  Detail: >
+    Thesis: <i>Secreted extracellular polysaccharide layer prevents phage binding on
+    Caulobacter crescentus.</i>
+  Start Date: 2012
+  End Date: 2016
   Icon: /assets/images/willamette.png
